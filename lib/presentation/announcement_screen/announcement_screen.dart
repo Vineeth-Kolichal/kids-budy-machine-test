@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:kids_buddy/presentation/widgets/space.dart';
-import 'package:kids_buddy/util/colors.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:kids_buddy/bloc/announcement_tab_bloc/announcement_tab_bloc.dart';
 import 'package:kids_buddy/util/export_util.dart';
-import 'package:kids_buddy/util/responsive.dart';
 
 import 'pages/announcement_tab/announcement_tab.dart';
 
@@ -11,6 +10,9 @@ class AnnouncementScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
+      context.read<AnnouncementTabBloc>().add(const GetAllAnnouncements());
+    });
     return DefaultTabController(
       length: 2,
       initialIndex: 0,
@@ -18,16 +20,9 @@ class AnnouncementScreen extends StatelessWidget {
         appBar: AppBar(
           leading: IconButton(
             onPressed: () {},
-            icon: Icon(Icons.arrow_back_ios),
+            icon: const Icon(Icons.arrow_back_ios),
           ),
-          title: Text('Announcement'),
-          // bottom: TabBar(
-          //   tabAlignment: TabAlignment.start,
-          //   tabs: [
-          //     Text('Announcement'),
-          //     Text('Notes'),
-          //   ],
-          // ),
+          title: const Text('Announcement'),
         ),
         body: Padding(
           padding: const EdgeInsets.all(15.0),
@@ -35,7 +30,7 @@ class AnnouncementScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Expanded(
+                const Expanded(
                   flex: 3,
                   child: Align(
                     alignment: Alignment.centerLeft,
@@ -43,18 +38,18 @@ class AnnouncementScreen extends StatelessWidget {
                       isScrollable: true,
                       tabs: [
                         Padding(
-                          padding: const EdgeInsets.all(8.0),
+                          padding: EdgeInsets.all(8.0),
                           child: Text('Announcement'),
                         ),
                         Padding(
-                          padding: const EdgeInsets.all(8.0),
+                          padding: EdgeInsets.all(8.0),
                           child: Text('Notes'),
                         ),
                       ],
                     ),
                   ),
                 ),
-                Spacer(),
+                const Spacer(),
                 SizedBox(
                   height: 50,
                   child: Row(
@@ -97,7 +92,7 @@ class AnnouncementScreen extends StatelessWidget {
             Expanded(
                 child: Container(
               color: whiteColor,
-              child: TabBarView(children: [
+              child: const TabBarView(children: [
                 AnnouncementTab(),
                 Center(
                   child: Text('Notes'),
