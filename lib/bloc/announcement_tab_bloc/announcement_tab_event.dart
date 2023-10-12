@@ -5,5 +5,7 @@ class AnnouncementTabEvent with _$AnnouncementTabEvent {
   const factory AnnouncementTabEvent.showInputSection() = ShowInputSection;
   const factory AnnouncementTabEvent.getAllAnnouncements() =
       GetAllAnnouncements;
-  factory AnnouncementTabEvent.addAnnouncement() = AddAnnouncement;
+  const factory AnnouncementTabEvent.addAnnouncement() = AddAnnouncement;
+  factory AnnouncementTabEvent.deleteAnnouncement({required int id}) =
+      DeleteAnnouncement;
 }

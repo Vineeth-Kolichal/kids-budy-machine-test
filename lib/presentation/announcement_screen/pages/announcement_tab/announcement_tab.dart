@@ -111,8 +111,9 @@ class MessageTile extends StatelessWidget {
                     ),
                     Space.y(10),
                     Visibility(
-                      visible: announcementModel.filePath != null,
+                      //visible: announcementModel.filePath != null,
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Row(
                             mainAxisSize: MainAxisSize.min,
@@ -198,15 +199,23 @@ class MessageTile extends StatelessWidget {
               decoration: BoxDecoration(
                   shape: BoxShape.circle, color: Color(0xFFF1ECF2)),
               child: PopupMenuButton(
+                initialValue: 0,
                 itemBuilder: (context) {
                   return [
                     PopupMenuItem(
+                      onTap: () {
+                        context
+                            .read<AnnouncementTabBloc>()
+                            .add(DeleteAnnouncement(id: announcementModel.key));
+                      },
                       child: Text('Delete'),
                     )
                   ];
                 },
                 icon: Text('T'),
-                onSelected: (value) {},
+                onSelected: (value) {
+                  print(value);
+                },
               ),
             )
           ],

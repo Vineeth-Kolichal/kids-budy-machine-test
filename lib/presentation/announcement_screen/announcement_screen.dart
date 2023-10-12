@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:kids_buddy/bloc/announcement_tab_bloc/announcement_tab_bloc.dart';
 import 'package:kids_buddy/util/export_util.dart';
 
 import 'pages/announcement_tab/announcement_tab.dart';
@@ -10,16 +8,15 @@ class AnnouncementScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
-      context.read<AnnouncementTabBloc>().add(const GetAllAnnouncements());
-    });
     return DefaultTabController(
       length: 2,
       initialIndex: 0,
       child: Scaffold(
         appBar: AppBar(
           leading: IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
             icon: const Icon(Icons.arrow_back_ios),
           ),
           title: const Text('Announcement'),

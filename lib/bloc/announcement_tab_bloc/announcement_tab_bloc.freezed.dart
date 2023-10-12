@@ -21,6 +21,7 @@ mixin _$AnnouncementTabEvent {
     required TResult Function() showInputSection,
     required TResult Function() getAllAnnouncements,
     required TResult Function() addAnnouncement,
+    required TResult Function(int id) deleteAnnouncement,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -28,6 +29,7 @@ mixin _$AnnouncementTabEvent {
     TResult? Function()? showInputSection,
     TResult? Function()? getAllAnnouncements,
     TResult? Function()? addAnnouncement,
+    TResult? Function(int id)? deleteAnnouncement,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -35,6 +37,7 @@ mixin _$AnnouncementTabEvent {
     TResult Function()? showInputSection,
     TResult Function()? getAllAnnouncements,
     TResult Function()? addAnnouncement,
+    TResult Function(int id)? deleteAnnouncement,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -43,6 +46,7 @@ mixin _$AnnouncementTabEvent {
     required TResult Function(ShowInputSection value) showInputSection,
     required TResult Function(GetAllAnnouncements value) getAllAnnouncements,
     required TResult Function(AddAnnouncement value) addAnnouncement,
+    required TResult Function(DeleteAnnouncement value) deleteAnnouncement,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -50,6 +54,7 @@ mixin _$AnnouncementTabEvent {
     TResult? Function(ShowInputSection value)? showInputSection,
     TResult? Function(GetAllAnnouncements value)? getAllAnnouncements,
     TResult? Function(AddAnnouncement value)? addAnnouncement,
+    TResult? Function(DeleteAnnouncement value)? deleteAnnouncement,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -57,6 +62,7 @@ mixin _$AnnouncementTabEvent {
     TResult Function(ShowInputSection value)? showInputSection,
     TResult Function(GetAllAnnouncements value)? getAllAnnouncements,
     TResult Function(AddAnnouncement value)? addAnnouncement,
+    TResult Function(DeleteAnnouncement value)? deleteAnnouncement,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -131,6 +137,7 @@ class _$ShowInputSectionImpl
     required TResult Function() showInputSection,
     required TResult Function() getAllAnnouncements,
     required TResult Function() addAnnouncement,
+    required TResult Function(int id) deleteAnnouncement,
   }) {
     return showInputSection();
   }
@@ -141,6 +148,7 @@ class _$ShowInputSectionImpl
     TResult? Function()? showInputSection,
     TResult? Function()? getAllAnnouncements,
     TResult? Function()? addAnnouncement,
+    TResult? Function(int id)? deleteAnnouncement,
   }) {
     return showInputSection?.call();
   }
@@ -151,6 +159,7 @@ class _$ShowInputSectionImpl
     TResult Function()? showInputSection,
     TResult Function()? getAllAnnouncements,
     TResult Function()? addAnnouncement,
+    TResult Function(int id)? deleteAnnouncement,
     required TResult orElse(),
   }) {
     if (showInputSection != null) {
@@ -165,6 +174,7 @@ class _$ShowInputSectionImpl
     required TResult Function(ShowInputSection value) showInputSection,
     required TResult Function(GetAllAnnouncements value) getAllAnnouncements,
     required TResult Function(AddAnnouncement value) addAnnouncement,
+    required TResult Function(DeleteAnnouncement value) deleteAnnouncement,
   }) {
     return showInputSection(this);
   }
@@ -175,6 +185,7 @@ class _$ShowInputSectionImpl
     TResult? Function(ShowInputSection value)? showInputSection,
     TResult? Function(GetAllAnnouncements value)? getAllAnnouncements,
     TResult? Function(AddAnnouncement value)? addAnnouncement,
+    TResult? Function(DeleteAnnouncement value)? deleteAnnouncement,
   }) {
     return showInputSection?.call(this);
   }
@@ -185,6 +196,7 @@ class _$ShowInputSectionImpl
     TResult Function(ShowInputSection value)? showInputSection,
     TResult Function(GetAllAnnouncements value)? getAllAnnouncements,
     TResult Function(AddAnnouncement value)? addAnnouncement,
+    TResult Function(DeleteAnnouncement value)? deleteAnnouncement,
     required TResult orElse(),
   }) {
     if (showInputSection != null) {
@@ -249,6 +261,7 @@ class _$GetAllAnnouncementsImpl
     required TResult Function() showInputSection,
     required TResult Function() getAllAnnouncements,
     required TResult Function() addAnnouncement,
+    required TResult Function(int id) deleteAnnouncement,
   }) {
     return getAllAnnouncements();
   }
@@ -259,6 +272,7 @@ class _$GetAllAnnouncementsImpl
     TResult? Function()? showInputSection,
     TResult? Function()? getAllAnnouncements,
     TResult? Function()? addAnnouncement,
+    TResult? Function(int id)? deleteAnnouncement,
   }) {
     return getAllAnnouncements?.call();
   }
@@ -269,6 +283,7 @@ class _$GetAllAnnouncementsImpl
     TResult Function()? showInputSection,
     TResult Function()? getAllAnnouncements,
     TResult Function()? addAnnouncement,
+    TResult Function(int id)? deleteAnnouncement,
     required TResult orElse(),
   }) {
     if (getAllAnnouncements != null) {
@@ -283,6 +298,7 @@ class _$GetAllAnnouncementsImpl
     required TResult Function(ShowInputSection value) showInputSection,
     required TResult Function(GetAllAnnouncements value) getAllAnnouncements,
     required TResult Function(AddAnnouncement value) addAnnouncement,
+    required TResult Function(DeleteAnnouncement value) deleteAnnouncement,
   }) {
     return getAllAnnouncements(this);
   }
@@ -293,6 +309,7 @@ class _$GetAllAnnouncementsImpl
     TResult? Function(ShowInputSection value)? showInputSection,
     TResult? Function(GetAllAnnouncements value)? getAllAnnouncements,
     TResult? Function(AddAnnouncement value)? addAnnouncement,
+    TResult? Function(DeleteAnnouncement value)? deleteAnnouncement,
   }) {
     return getAllAnnouncements?.call(this);
   }
@@ -303,6 +320,7 @@ class _$GetAllAnnouncementsImpl
     TResult Function(ShowInputSection value)? showInputSection,
     TResult Function(GetAllAnnouncements value)? getAllAnnouncements,
     TResult Function(AddAnnouncement value)? addAnnouncement,
+    TResult Function(DeleteAnnouncement value)? deleteAnnouncement,
     required TResult orElse(),
   }) {
     if (getAllAnnouncements != null) {
@@ -337,7 +355,7 @@ class __$$AddAnnouncementImplCopyWithImpl<$Res>
 class _$AddAnnouncementImpl
     with DiagnosticableTreeMixin
     implements AddAnnouncement {
-  _$AddAnnouncementImpl();
+  const _$AddAnnouncementImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -366,6 +384,7 @@ class _$AddAnnouncementImpl
     required TResult Function() showInputSection,
     required TResult Function() getAllAnnouncements,
     required TResult Function() addAnnouncement,
+    required TResult Function(int id) deleteAnnouncement,
   }) {
     return addAnnouncement();
   }
@@ -376,6 +395,7 @@ class _$AddAnnouncementImpl
     TResult? Function()? showInputSection,
     TResult? Function()? getAllAnnouncements,
     TResult? Function()? addAnnouncement,
+    TResult? Function(int id)? deleteAnnouncement,
   }) {
     return addAnnouncement?.call();
   }
@@ -386,6 +406,7 @@ class _$AddAnnouncementImpl
     TResult Function()? showInputSection,
     TResult Function()? getAllAnnouncements,
     TResult Function()? addAnnouncement,
+    TResult Function(int id)? deleteAnnouncement,
     required TResult orElse(),
   }) {
     if (addAnnouncement != null) {
@@ -400,6 +421,7 @@ class _$AddAnnouncementImpl
     required TResult Function(ShowInputSection value) showInputSection,
     required TResult Function(GetAllAnnouncements value) getAllAnnouncements,
     required TResult Function(AddAnnouncement value) addAnnouncement,
+    required TResult Function(DeleteAnnouncement value) deleteAnnouncement,
   }) {
     return addAnnouncement(this);
   }
@@ -410,6 +432,7 @@ class _$AddAnnouncementImpl
     TResult? Function(ShowInputSection value)? showInputSection,
     TResult? Function(GetAllAnnouncements value)? getAllAnnouncements,
     TResult? Function(AddAnnouncement value)? addAnnouncement,
+    TResult? Function(DeleteAnnouncement value)? deleteAnnouncement,
   }) {
     return addAnnouncement?.call(this);
   }
@@ -420,6 +443,7 @@ class _$AddAnnouncementImpl
     TResult Function(ShowInputSection value)? showInputSection,
     TResult Function(GetAllAnnouncements value)? getAllAnnouncements,
     TResult Function(AddAnnouncement value)? addAnnouncement,
+    TResult Function(DeleteAnnouncement value)? deleteAnnouncement,
     required TResult orElse(),
   }) {
     if (addAnnouncement != null) {
@@ -430,7 +454,165 @@ class _$AddAnnouncementImpl
 }
 
 abstract class AddAnnouncement implements AnnouncementTabEvent {
-  factory AddAnnouncement() = _$AddAnnouncementImpl;
+  const factory AddAnnouncement() = _$AddAnnouncementImpl;
+}
+
+/// @nodoc
+abstract class _$$DeleteAnnouncementImplCopyWith<$Res> {
+  factory _$$DeleteAnnouncementImplCopyWith(_$DeleteAnnouncementImpl value,
+          $Res Function(_$DeleteAnnouncementImpl) then) =
+      __$$DeleteAnnouncementImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({int id});
+}
+
+/// @nodoc
+class __$$DeleteAnnouncementImplCopyWithImpl<$Res>
+    extends _$AnnouncementTabEventCopyWithImpl<$Res, _$DeleteAnnouncementImpl>
+    implements _$$DeleteAnnouncementImplCopyWith<$Res> {
+  __$$DeleteAnnouncementImplCopyWithImpl(_$DeleteAnnouncementImpl _value,
+      $Res Function(_$DeleteAnnouncementImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? id = null,
+  }) {
+    return _then(_$DeleteAnnouncementImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$DeleteAnnouncementImpl
+    with DiagnosticableTreeMixin
+    implements DeleteAnnouncement {
+  _$DeleteAnnouncementImpl({required this.id});
+
+  @override
+  final int id;
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'AnnouncementTabEvent.deleteAnnouncement(id: $id)';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+      ..add(DiagnosticsProperty(
+          'type', 'AnnouncementTabEvent.deleteAnnouncement'))
+      ..add(DiagnosticsProperty('id', id));
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$DeleteAnnouncementImpl &&
+            (identical(other.id, id) || other.id == id));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, id);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$DeleteAnnouncementImplCopyWith<_$DeleteAnnouncementImpl> get copyWith =>
+      __$$DeleteAnnouncementImplCopyWithImpl<_$DeleteAnnouncementImpl>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() showInputSection,
+    required TResult Function() getAllAnnouncements,
+    required TResult Function() addAnnouncement,
+    required TResult Function(int id) deleteAnnouncement,
+  }) {
+    return deleteAnnouncement(id);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? showInputSection,
+    TResult? Function()? getAllAnnouncements,
+    TResult? Function()? addAnnouncement,
+    TResult? Function(int id)? deleteAnnouncement,
+  }) {
+    return deleteAnnouncement?.call(id);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? showInputSection,
+    TResult Function()? getAllAnnouncements,
+    TResult Function()? addAnnouncement,
+    TResult Function(int id)? deleteAnnouncement,
+    required TResult orElse(),
+  }) {
+    if (deleteAnnouncement != null) {
+      return deleteAnnouncement(id);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(ShowInputSection value) showInputSection,
+    required TResult Function(GetAllAnnouncements value) getAllAnnouncements,
+    required TResult Function(AddAnnouncement value) addAnnouncement,
+    required TResult Function(DeleteAnnouncement value) deleteAnnouncement,
+  }) {
+    return deleteAnnouncement(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(ShowInputSection value)? showInputSection,
+    TResult? Function(GetAllAnnouncements value)? getAllAnnouncements,
+    TResult? Function(AddAnnouncement value)? addAnnouncement,
+    TResult? Function(DeleteAnnouncement value)? deleteAnnouncement,
+  }) {
+    return deleteAnnouncement?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(ShowInputSection value)? showInputSection,
+    TResult Function(GetAllAnnouncements value)? getAllAnnouncements,
+    TResult Function(AddAnnouncement value)? addAnnouncement,
+    TResult Function(DeleteAnnouncement value)? deleteAnnouncement,
+    required TResult orElse(),
+  }) {
+    if (deleteAnnouncement != null) {
+      return deleteAnnouncement(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class DeleteAnnouncement implements AnnouncementTabEvent {
+  factory DeleteAnnouncement({required final int id}) =
+      _$DeleteAnnouncementImpl;
+
+  int get id;
+  @JsonKey(ignore: true)
+  _$$DeleteAnnouncementImplCopyWith<_$DeleteAnnouncementImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc

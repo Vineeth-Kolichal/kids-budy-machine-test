@@ -46,5 +46,10 @@ class AnnouncementTabBloc
         add(const GetAllAnnouncements());
       }
     });
+
+    on<DeleteAnnouncement>((event, emit) async {
+      await announcementDataProvider.deleteAnnouncement(event.id);
+      add(const GetAllAnnouncements());
+    });
   }
 }

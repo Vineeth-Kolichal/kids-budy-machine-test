@@ -18,7 +18,14 @@ class AnnouncementDataProvider {
     List<AnnouncementModel> announdementList = [];
     final db = await getDbObject();
     announdementList.addAll(db.values);
+    await db.close();
     return announdementList;
+  }
+
+  Future<void> deleteAnnouncement(int id) async {
+    final db = await getDbObject();
+    await db.delete(id);
+    db.close();
   }
 
   //Making singleton
