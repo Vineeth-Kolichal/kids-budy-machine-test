@@ -63,7 +63,12 @@ class AnnouncementScreen extends StatelessWidget {
                         height: 35,
                         padding: const EdgeInsets.symmetric(horizontal: 15),
                         color: const Color.fromARGB(255, 224, 224, 224),
-                        child: const Center(child: Text('Class')),
+                        child: Center(
+                            child: Text('Class',
+                                style: TextStyle(
+                                    fontSize: Responsive.isTablet(context)
+                                        ? 15
+                                        : 9))),
                       ),
                       Container(
                         padding: const EdgeInsets.symmetric(horizontal: 7),
@@ -71,8 +76,14 @@ class AnnouncementScreen extends StatelessWidget {
                         color: const Color.fromARGB(255, 240, 239, 239),
                         child: DropdownButtonHideUnderline(
                           child: DropdownButton(
-                            items: const [
-                              DropdownMenuItem(child: Text('Grade 1A English'))
+                            items: [
+                              DropdownMenuItem(
+                                  child: Text(
+                                'Grade 1A English',
+                                style: TextStyle(
+                                    fontSize:
+                                        Responsive.isTablet(context) ? 15 : 9),
+                              ))
                             ],
                             onChanged: (value) {},
                           ),

@@ -80,11 +80,86 @@ class MessageSection extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.all(15.0),
                     child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.end,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
                           'Exams schedules has been updated ,please check tha attached file',
                         ),
+                        Space.y(10),
+                        Container(
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Container(
+                                padding: EdgeInsets.all(10),
+                                color: whiteColor,
+                                child: Row(
+                                  children: [
+                                    Image.asset(
+                                      'assets/images/pdf-icon.png',
+                                      scale: 6,
+                                    ),
+                                    Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Text('Filename.pdf'),
+                                        Text('24 MB')
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
+                              Space.x(10),
+                              IconButton(
+                                  style: IconButton.styleFrom(
+                                      backgroundColor: Color(0xFFCECCCC)),
+                                  onPressed: () {},
+                                  icon: Icon(
+                                    Icons.arrow_downward_outlined,
+                                    color: whiteColor,
+                                  ))
+                            ],
+                          ),
+                        ),
+                        Space.y(10),
+                        Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text(
+                              '25',
+                              style: TextStyle(color: Colors.blue),
+                            ),
+                            Space.x(5),
+                            Icon(
+                              Icons.thumb_up_alt_outlined,
+                              size: 15,
+                              color: Colors.blue,
+                            ),
+                            Space.x(5),
+                            InkWell(
+                                onTap: () {},
+                                child: Text(
+                                  "Like",
+                                  style: TextStyle(
+                                    color: Colors.blue,
+                                  ),
+                                ))
+                          ],
+                        ),
+                        Space.y(10),
+                        Text('View all replay'),
+                        // TextButton.icon(
+                        //     onPressed: () {},
+                        //     icon: Icon(Icons.reply_sharp),
+                        //     label: Text('Replay')),
+                        Space.y(10),
+                        Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [Icon(Icons.reply_sharp), Text('Replay')],
+                        ),
+                        Space.y(10),
+
                         Row(
                           mainAxisAlignment: MainAxisAlignment.end,
                           mainAxisSize: MainAxisSize.min,
@@ -128,7 +203,7 @@ class InputSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.symmetric(
-          horizontal: Responsive.isTablet(context) ? 30 : 10, vertical: 8),
+          horizontal: Responsive.isTablet(context) ? 30 : 15, vertical: 8),
       // height: 150,
       decoration: BoxDecoration(
         color: const Color(0xFFF1F1F3),
