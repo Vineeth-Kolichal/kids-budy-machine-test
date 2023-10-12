@@ -21,13 +21,14 @@ class AnnouncementModelAdapter extends TypeAdapter<AnnouncementModel> {
       filePath: fields[1] as String?,
       likeCount: fields[2] as int?,
       replays: (fields[3] as List?)?.cast<String>(),
+      time: fields[4] as DateTime,
     );
   }
 
   @override
   void write(BinaryWriter writer, AnnouncementModel obj) {
     writer
-      ..writeByte(4)
+      ..writeByte(5)
       ..writeByte(0)
       ..write(obj.message)
       ..writeByte(1)
@@ -35,7 +36,9 @@ class AnnouncementModelAdapter extends TypeAdapter<AnnouncementModel> {
       ..writeByte(2)
       ..write(obj.likeCount)
       ..writeByte(3)
-      ..write(obj.replays);
+      ..write(obj.replays)
+      ..writeByte(4)
+      ..write(obj.time);
   }
 
   @override

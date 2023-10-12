@@ -6,6 +6,7 @@ class AnnouncementTabEvent with _$AnnouncementTabEvent {
   const factory AnnouncementTabEvent.getAllAnnouncements() =
       GetAllAnnouncements;
   const factory AnnouncementTabEvent.addAnnouncement() = AddAnnouncement;
+   const factory AnnouncementTabEvent.pickFile() = PickFile;
   factory AnnouncementTabEvent.deleteAnnouncement({required int id}) =
       DeleteAnnouncement;
 }

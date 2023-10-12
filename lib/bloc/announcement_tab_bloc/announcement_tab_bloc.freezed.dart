@@ -21,6 +21,7 @@ mixin _$AnnouncementTabEvent {
     required TResult Function() showInputSection,
     required TResult Function() getAllAnnouncements,
     required TResult Function() addAnnouncement,
+    required TResult Function() pickFile,
     required TResult Function(int id) deleteAnnouncement,
   }) =>
       throw _privateConstructorUsedError;
@@ -29,6 +30,7 @@ mixin _$AnnouncementTabEvent {
     TResult? Function()? showInputSection,
     TResult? Function()? getAllAnnouncements,
     TResult? Function()? addAnnouncement,
+    TResult? Function()? pickFile,
     TResult? Function(int id)? deleteAnnouncement,
   }) =>
       throw _privateConstructorUsedError;
@@ -37,6 +39,7 @@ mixin _$AnnouncementTabEvent {
     TResult Function()? showInputSection,
     TResult Function()? getAllAnnouncements,
     TResult Function()? addAnnouncement,
+    TResult Function()? pickFile,
     TResult Function(int id)? deleteAnnouncement,
     required TResult orElse(),
   }) =>
@@ -46,6 +49,7 @@ mixin _$AnnouncementTabEvent {
     required TResult Function(ShowInputSection value) showInputSection,
     required TResult Function(GetAllAnnouncements value) getAllAnnouncements,
     required TResult Function(AddAnnouncement value) addAnnouncement,
+    required TResult Function(PickFile value) pickFile,
     required TResult Function(DeleteAnnouncement value) deleteAnnouncement,
   }) =>
       throw _privateConstructorUsedError;
@@ -54,6 +58,7 @@ mixin _$AnnouncementTabEvent {
     TResult? Function(ShowInputSection value)? showInputSection,
     TResult? Function(GetAllAnnouncements value)? getAllAnnouncements,
     TResult? Function(AddAnnouncement value)? addAnnouncement,
+    TResult? Function(PickFile value)? pickFile,
     TResult? Function(DeleteAnnouncement value)? deleteAnnouncement,
   }) =>
       throw _privateConstructorUsedError;
@@ -62,6 +67,7 @@ mixin _$AnnouncementTabEvent {
     TResult Function(ShowInputSection value)? showInputSection,
     TResult Function(GetAllAnnouncements value)? getAllAnnouncements,
     TResult Function(AddAnnouncement value)? addAnnouncement,
+    TResult Function(PickFile value)? pickFile,
     TResult Function(DeleteAnnouncement value)? deleteAnnouncement,
     required TResult orElse(),
   }) =>
@@ -137,6 +143,7 @@ class _$ShowInputSectionImpl
     required TResult Function() showInputSection,
     required TResult Function() getAllAnnouncements,
     required TResult Function() addAnnouncement,
+    required TResult Function() pickFile,
     required TResult Function(int id) deleteAnnouncement,
   }) {
     return showInputSection();
@@ -148,6 +155,7 @@ class _$ShowInputSectionImpl
     TResult? Function()? showInputSection,
     TResult? Function()? getAllAnnouncements,
     TResult? Function()? addAnnouncement,
+    TResult? Function()? pickFile,
     TResult? Function(int id)? deleteAnnouncement,
   }) {
     return showInputSection?.call();
@@ -159,6 +167,7 @@ class _$ShowInputSectionImpl
     TResult Function()? showInputSection,
     TResult Function()? getAllAnnouncements,
     TResult Function()? addAnnouncement,
+    TResult Function()? pickFile,
     TResult Function(int id)? deleteAnnouncement,
     required TResult orElse(),
   }) {
@@ -174,6 +183,7 @@ class _$ShowInputSectionImpl
     required TResult Function(ShowInputSection value) showInputSection,
     required TResult Function(GetAllAnnouncements value) getAllAnnouncements,
     required TResult Function(AddAnnouncement value) addAnnouncement,
+    required TResult Function(PickFile value) pickFile,
     required TResult Function(DeleteAnnouncement value) deleteAnnouncement,
   }) {
     return showInputSection(this);
@@ -185,6 +195,7 @@ class _$ShowInputSectionImpl
     TResult? Function(ShowInputSection value)? showInputSection,
     TResult? Function(GetAllAnnouncements value)? getAllAnnouncements,
     TResult? Function(AddAnnouncement value)? addAnnouncement,
+    TResult? Function(PickFile value)? pickFile,
     TResult? Function(DeleteAnnouncement value)? deleteAnnouncement,
   }) {
     return showInputSection?.call(this);
@@ -196,6 +207,7 @@ class _$ShowInputSectionImpl
     TResult Function(ShowInputSection value)? showInputSection,
     TResult Function(GetAllAnnouncements value)? getAllAnnouncements,
     TResult Function(AddAnnouncement value)? addAnnouncement,
+    TResult Function(PickFile value)? pickFile,
     TResult Function(DeleteAnnouncement value)? deleteAnnouncement,
     required TResult orElse(),
   }) {
@@ -261,6 +273,7 @@ class _$GetAllAnnouncementsImpl
     required TResult Function() showInputSection,
     required TResult Function() getAllAnnouncements,
     required TResult Function() addAnnouncement,
+    required TResult Function() pickFile,
     required TResult Function(int id) deleteAnnouncement,
   }) {
     return getAllAnnouncements();
@@ -272,6 +285,7 @@ class _$GetAllAnnouncementsImpl
     TResult? Function()? showInputSection,
     TResult? Function()? getAllAnnouncements,
     TResult? Function()? addAnnouncement,
+    TResult? Function()? pickFile,
     TResult? Function(int id)? deleteAnnouncement,
   }) {
     return getAllAnnouncements?.call();
@@ -283,6 +297,7 @@ class _$GetAllAnnouncementsImpl
     TResult Function()? showInputSection,
     TResult Function()? getAllAnnouncements,
     TResult Function()? addAnnouncement,
+    TResult Function()? pickFile,
     TResult Function(int id)? deleteAnnouncement,
     required TResult orElse(),
   }) {
@@ -298,6 +313,7 @@ class _$GetAllAnnouncementsImpl
     required TResult Function(ShowInputSection value) showInputSection,
     required TResult Function(GetAllAnnouncements value) getAllAnnouncements,
     required TResult Function(AddAnnouncement value) addAnnouncement,
+    required TResult Function(PickFile value) pickFile,
     required TResult Function(DeleteAnnouncement value) deleteAnnouncement,
   }) {
     return getAllAnnouncements(this);
@@ -309,6 +325,7 @@ class _$GetAllAnnouncementsImpl
     TResult? Function(ShowInputSection value)? showInputSection,
     TResult? Function(GetAllAnnouncements value)? getAllAnnouncements,
     TResult? Function(AddAnnouncement value)? addAnnouncement,
+    TResult? Function(PickFile value)? pickFile,
     TResult? Function(DeleteAnnouncement value)? deleteAnnouncement,
   }) {
     return getAllAnnouncements?.call(this);
@@ -320,6 +337,7 @@ class _$GetAllAnnouncementsImpl
     TResult Function(ShowInputSection value)? showInputSection,
     TResult Function(GetAllAnnouncements value)? getAllAnnouncements,
     TResult Function(AddAnnouncement value)? addAnnouncement,
+    TResult Function(PickFile value)? pickFile,
     TResult Function(DeleteAnnouncement value)? deleteAnnouncement,
     required TResult orElse(),
   }) {
@@ -384,6 +402,7 @@ class _$AddAnnouncementImpl
     required TResult Function() showInputSection,
     required TResult Function() getAllAnnouncements,
     required TResult Function() addAnnouncement,
+    required TResult Function() pickFile,
     required TResult Function(int id) deleteAnnouncement,
   }) {
     return addAnnouncement();
@@ -395,6 +414,7 @@ class _$AddAnnouncementImpl
     TResult? Function()? showInputSection,
     TResult? Function()? getAllAnnouncements,
     TResult? Function()? addAnnouncement,
+    TResult? Function()? pickFile,
     TResult? Function(int id)? deleteAnnouncement,
   }) {
     return addAnnouncement?.call();
@@ -406,6 +426,7 @@ class _$AddAnnouncementImpl
     TResult Function()? showInputSection,
     TResult Function()? getAllAnnouncements,
     TResult Function()? addAnnouncement,
+    TResult Function()? pickFile,
     TResult Function(int id)? deleteAnnouncement,
     required TResult orElse(),
   }) {
@@ -421,6 +442,7 @@ class _$AddAnnouncementImpl
     required TResult Function(ShowInputSection value) showInputSection,
     required TResult Function(GetAllAnnouncements value) getAllAnnouncements,
     required TResult Function(AddAnnouncement value) addAnnouncement,
+    required TResult Function(PickFile value) pickFile,
     required TResult Function(DeleteAnnouncement value) deleteAnnouncement,
   }) {
     return addAnnouncement(this);
@@ -432,6 +454,7 @@ class _$AddAnnouncementImpl
     TResult? Function(ShowInputSection value)? showInputSection,
     TResult? Function(GetAllAnnouncements value)? getAllAnnouncements,
     TResult? Function(AddAnnouncement value)? addAnnouncement,
+    TResult? Function(PickFile value)? pickFile,
     TResult? Function(DeleteAnnouncement value)? deleteAnnouncement,
   }) {
     return addAnnouncement?.call(this);
@@ -443,6 +466,7 @@ class _$AddAnnouncementImpl
     TResult Function(ShowInputSection value)? showInputSection,
     TResult Function(GetAllAnnouncements value)? getAllAnnouncements,
     TResult Function(AddAnnouncement value)? addAnnouncement,
+    TResult Function(PickFile value)? pickFile,
     TResult Function(DeleteAnnouncement value)? deleteAnnouncement,
     required TResult orElse(),
   }) {
@@ -455,6 +479,133 @@ class _$AddAnnouncementImpl
 
 abstract class AddAnnouncement implements AnnouncementTabEvent {
   const factory AddAnnouncement() = _$AddAnnouncementImpl;
+}
+
+/// @nodoc
+abstract class _$$PickFileImplCopyWith<$Res> {
+  factory _$$PickFileImplCopyWith(
+          _$PickFileImpl value, $Res Function(_$PickFileImpl) then) =
+      __$$PickFileImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$PickFileImplCopyWithImpl<$Res>
+    extends _$AnnouncementTabEventCopyWithImpl<$Res, _$PickFileImpl>
+    implements _$$PickFileImplCopyWith<$Res> {
+  __$$PickFileImplCopyWithImpl(
+      _$PickFileImpl _value, $Res Function(_$PickFileImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$PickFileImpl with DiagnosticableTreeMixin implements PickFile {
+  const _$PickFileImpl();
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'AnnouncementTabEvent.pickFile()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+        .add(DiagnosticsProperty('type', 'AnnouncementTabEvent.pickFile'));
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$PickFileImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() showInputSection,
+    required TResult Function() getAllAnnouncements,
+    required TResult Function() addAnnouncement,
+    required TResult Function() pickFile,
+    required TResult Function(int id) deleteAnnouncement,
+  }) {
+    return pickFile();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? showInputSection,
+    TResult? Function()? getAllAnnouncements,
+    TResult? Function()? addAnnouncement,
+    TResult? Function()? pickFile,
+    TResult? Function(int id)? deleteAnnouncement,
+  }) {
+    return pickFile?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? showInputSection,
+    TResult Function()? getAllAnnouncements,
+    TResult Function()? addAnnouncement,
+    TResult Function()? pickFile,
+    TResult Function(int id)? deleteAnnouncement,
+    required TResult orElse(),
+  }) {
+    if (pickFile != null) {
+      return pickFile();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(ShowInputSection value) showInputSection,
+    required TResult Function(GetAllAnnouncements value) getAllAnnouncements,
+    required TResult Function(AddAnnouncement value) addAnnouncement,
+    required TResult Function(PickFile value) pickFile,
+    required TResult Function(DeleteAnnouncement value) deleteAnnouncement,
+  }) {
+    return pickFile(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(ShowInputSection value)? showInputSection,
+    TResult? Function(GetAllAnnouncements value)? getAllAnnouncements,
+    TResult? Function(AddAnnouncement value)? addAnnouncement,
+    TResult? Function(PickFile value)? pickFile,
+    TResult? Function(DeleteAnnouncement value)? deleteAnnouncement,
+  }) {
+    return pickFile?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(ShowInputSection value)? showInputSection,
+    TResult Function(GetAllAnnouncements value)? getAllAnnouncements,
+    TResult Function(AddAnnouncement value)? addAnnouncement,
+    TResult Function(PickFile value)? pickFile,
+    TResult Function(DeleteAnnouncement value)? deleteAnnouncement,
+    required TResult orElse(),
+  }) {
+    if (pickFile != null) {
+      return pickFile(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class PickFile implements AnnouncementTabEvent {
+  const factory PickFile() = _$PickFileImpl;
 }
 
 /// @nodoc
@@ -536,6 +687,7 @@ class _$DeleteAnnouncementImpl
     required TResult Function() showInputSection,
     required TResult Function() getAllAnnouncements,
     required TResult Function() addAnnouncement,
+    required TResult Function() pickFile,
     required TResult Function(int id) deleteAnnouncement,
   }) {
     return deleteAnnouncement(id);
@@ -547,6 +699,7 @@ class _$DeleteAnnouncementImpl
     TResult? Function()? showInputSection,
     TResult? Function()? getAllAnnouncements,
     TResult? Function()? addAnnouncement,
+    TResult? Function()? pickFile,
     TResult? Function(int id)? deleteAnnouncement,
   }) {
     return deleteAnnouncement?.call(id);
@@ -558,6 +711,7 @@ class _$DeleteAnnouncementImpl
     TResult Function()? showInputSection,
     TResult Function()? getAllAnnouncements,
     TResult Function()? addAnnouncement,
+    TResult Function()? pickFile,
     TResult Function(int id)? deleteAnnouncement,
     required TResult orElse(),
   }) {
@@ -573,6 +727,7 @@ class _$DeleteAnnouncementImpl
     required TResult Function(ShowInputSection value) showInputSection,
     required TResult Function(GetAllAnnouncements value) getAllAnnouncements,
     required TResult Function(AddAnnouncement value) addAnnouncement,
+    required TResult Function(PickFile value) pickFile,
     required TResult Function(DeleteAnnouncement value) deleteAnnouncement,
   }) {
     return deleteAnnouncement(this);
@@ -584,6 +739,7 @@ class _$DeleteAnnouncementImpl
     TResult? Function(ShowInputSection value)? showInputSection,
     TResult? Function(GetAllAnnouncements value)? getAllAnnouncements,
     TResult? Function(AddAnnouncement value)? addAnnouncement,
+    TResult? Function(PickFile value)? pickFile,
     TResult? Function(DeleteAnnouncement value)? deleteAnnouncement,
   }) {
     return deleteAnnouncement?.call(this);
@@ -595,6 +751,7 @@ class _$DeleteAnnouncementImpl
     TResult Function(ShowInputSection value)? showInputSection,
     TResult Function(GetAllAnnouncements value)? getAllAnnouncements,
     TResult Function(AddAnnouncement value)? addAnnouncement,
+    TResult Function(PickFile value)? pickFile,
     TResult Function(DeleteAnnouncement value)? deleteAnnouncement,
     required TResult orElse(),
   }) {
@@ -620,6 +777,7 @@ mixin _$AnnouncementTabState {
   List<AnnouncementModel> get announcementList =>
       throw _privateConstructorUsedError;
   bool get showInitialMessageScreen => throw _privateConstructorUsedError;
+  String? get pickedFileName => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $AnnouncementTabStateCopyWith<AnnouncementTabState> get copyWith =>
@@ -634,7 +792,8 @@ abstract class $AnnouncementTabStateCopyWith<$Res> {
   @useResult
   $Res call(
       {List<AnnouncementModel> announcementList,
-      bool showInitialMessageScreen});
+      bool showInitialMessageScreen,
+      String? pickedFileName});
 }
 
 /// @nodoc
@@ -653,6 +812,7 @@ class _$AnnouncementTabStateCopyWithImpl<$Res,
   $Res call({
     Object? announcementList = null,
     Object? showInitialMessageScreen = null,
+    Object? pickedFileName = freezed,
   }) {
     return _then(_value.copyWith(
       announcementList: null == announcementList
@@ -663,6 +823,10 @@ class _$AnnouncementTabStateCopyWithImpl<$Res,
           ? _value.showInitialMessageScreen
           : showInitialMessageScreen // ignore: cast_nullable_to_non_nullable
               as bool,
+      pickedFileName: freezed == pickedFileName
+          ? _value.pickedFileName
+          : pickedFileName // ignore: cast_nullable_to_non_nullable
+              as String?,
     ) as $Val);
   }
 }
@@ -677,7 +841,8 @@ abstract class _$$InitialImplCopyWith<$Res>
   @useResult
   $Res call(
       {List<AnnouncementModel> announcementList,
-      bool showInitialMessageScreen});
+      bool showInitialMessageScreen,
+      String? pickedFileName});
 }
 
 /// @nodoc
@@ -693,6 +858,7 @@ class __$$InitialImplCopyWithImpl<$Res>
   $Res call({
     Object? announcementList = null,
     Object? showInitialMessageScreen = null,
+    Object? pickedFileName = freezed,
   }) {
     return _then(_$InitialImpl(
       announcementList: null == announcementList
@@ -703,6 +869,10 @@ class __$$InitialImplCopyWithImpl<$Res>
           ? _value.showInitialMessageScreen
           : showInitialMessageScreen // ignore: cast_nullable_to_non_nullable
               as bool,
+      pickedFileName: freezed == pickedFileName
+          ? _value.pickedFileName
+          : pickedFileName // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -712,7 +882,8 @@ class __$$InitialImplCopyWithImpl<$Res>
 class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
   const _$InitialImpl(
       {required final List<AnnouncementModel> announcementList,
-      required this.showInitialMessageScreen})
+      required this.showInitialMessageScreen,
+      required this.pickedFileName})
       : _announcementList = announcementList;
 
   final List<AnnouncementModel> _announcementList;
@@ -726,10 +897,12 @@ class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
 
   @override
   final bool showInitialMessageScreen;
+  @override
+  final String? pickedFileName;
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'AnnouncementTabState(announcementList: $announcementList, showInitialMessageScreen: $showInitialMessageScreen)';
+    return 'AnnouncementTabState(announcementList: $announcementList, showInitialMessageScreen: $showInitialMessageScreen, pickedFileName: $pickedFileName)';
   }
 
   @override
@@ -739,7 +912,8 @@ class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
       ..add(DiagnosticsProperty('type', 'AnnouncementTabState'))
       ..add(DiagnosticsProperty('announcementList', announcementList))
       ..add(DiagnosticsProperty(
-          'showInitialMessageScreen', showInitialMessageScreen));
+          'showInitialMessageScreen', showInitialMessageScreen))
+      ..add(DiagnosticsProperty('pickedFileName', pickedFileName));
   }
 
   @override
@@ -751,14 +925,17 @@ class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
                 .equals(other._announcementList, _announcementList) &&
             (identical(
                     other.showInitialMessageScreen, showInitialMessageScreen) ||
-                other.showInitialMessageScreen == showInitialMessageScreen));
+                other.showInitialMessageScreen == showInitialMessageScreen) &&
+            (identical(other.pickedFileName, pickedFileName) ||
+                other.pickedFileName == pickedFileName));
   }
 
   @override
   int get hashCode => Object.hash(
       runtimeType,
       const DeepCollectionEquality().hash(_announcementList),
-      showInitialMessageScreen);
+      showInitialMessageScreen,
+      pickedFileName);
 
   @JsonKey(ignore: true)
   @override
@@ -770,12 +947,15 @@ class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
 abstract class _Initial implements AnnouncementTabState {
   const factory _Initial(
       {required final List<AnnouncementModel> announcementList,
-      required final bool showInitialMessageScreen}) = _$InitialImpl;
+      required final bool showInitialMessageScreen,
+      required final String? pickedFileName}) = _$InitialImpl;
 
   @override
   List<AnnouncementModel> get announcementList;
   @override
   bool get showInitialMessageScreen;
+  @override
+  String? get pickedFileName;
   @override
   @JsonKey(ignore: true)
   _$$InitialImplCopyWith<_$InitialImpl> get copyWith =>
