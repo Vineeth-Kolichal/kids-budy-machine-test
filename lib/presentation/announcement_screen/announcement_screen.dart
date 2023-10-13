@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kids_buddy/util/export_util.dart';
 
-import 'pages/announcement_tab/announcement_tab.dart';
+import 'tabs/announcement_tab/announcement_tab.dart';
 
 class AnnouncementScreen extends StatelessWidget {
   const AnnouncementScreen({super.key});

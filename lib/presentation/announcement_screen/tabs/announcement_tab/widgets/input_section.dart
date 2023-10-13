@@ -71,7 +71,7 @@ class InputSection extends StatelessWidget {
                               .announcementController,
                           keyboardType: TextInputType.multiline,
                           decoration: const InputDecoration(
-                              hintText: 'Enter you replay here',
+                              hintText: 'Enter you reply here',
                               border: InputBorder.none),
                         ),
                       ),

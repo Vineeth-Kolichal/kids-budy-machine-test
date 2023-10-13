@@ -12,4 +12,6 @@ class AnnouncementTabEvent with _$AnnouncementTabEvent {
   factory AnnouncementTabEvent.showReplyInput(
       {required AnnouncementModel? announcementModel}) = ShowReplyInput;
   const factory AnnouncementTabEvent.sendReply({required AnnouncementModel model}) = SendReply;
+  const factory AnnouncementTabEvent.like({required AnnouncementModel model}) = Like;
 }
+

@@ -98,7 +98,11 @@ class _DocumentDetailsSectionState extends State<DocumentDetailsSection> {
             ),
             Space.x(5),
             InkWell(
-                onTap: () {},
+                onTap: () {
+                  context
+                      .read<AnnouncementTabBloc>()
+                      .add(Like(model: widget.announcementModel));
+                },
                 child: const Text(
                   "Like",
                   style: TextStyle(

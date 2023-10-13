@@ -48,7 +48,6 @@ class AnnouncementTabBloc
       emit(state.copyWith(showInitialMessageScreen: false));
     });
 
-
     //Adding new announcement
     on<AddAnnouncement>((event, emit) async {
       if (announcementController.text.isNotEmpty) {
@@ -74,7 +73,6 @@ class AnnouncementTabBloc
       add(const GetAllAnnouncements());
     });
 
-
     //Pick document file
     on<PickFile>((event, emit) async {
       await FilePicker.platform.pickFiles(
@@ -92,18 +90,22 @@ class AnnouncementTabBloc
       });
     });
 
-
     //showing replay input section while clicking replay in messagetile
     on<ShowReplyInput>((event, emit) {
       emit(state.copyWith(replayItem: event.announcementModel));
     });
-    
 
     //adding replay to database
     on<SendReply>((event, emit) async {
       event.model.replays.add(announcementController.text.trim());
       await announcementDataProvider.addReply(event.model).then((_) {
         announcementController.clear();
+        add(const GetAllAnnouncements());
+      });
+    });
+
+    on<Like>((event, emit) async {
+      await announcementDataProvider.like(event.model).then((_) {
         add(const GetAllAnnouncements());
       });
     });

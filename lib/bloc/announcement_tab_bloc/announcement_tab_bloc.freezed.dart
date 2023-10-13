@@ -26,6 +26,7 @@ mixin _$AnnouncementTabEvent {
     required TResult Function(AnnouncementModel? announcementModel)
         showReplyInput,
     required TResult Function(AnnouncementModel model) sendReply,
+    required TResult Function(AnnouncementModel model) like,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -37,6 +38,7 @@ mixin _$AnnouncementTabEvent {
     TResult? Function(int id)? deleteAnnouncement,
     TResult? Function(AnnouncementModel? announcementModel)? showReplyInput,
     TResult? Function(AnnouncementModel model)? sendReply,
+    TResult? Function(AnnouncementModel model)? like,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -48,6 +50,7 @@ mixin _$AnnouncementTabEvent {
     TResult Function(int id)? deleteAnnouncement,
     TResult Function(AnnouncementModel? announcementModel)? showReplyInput,
     TResult Function(AnnouncementModel model)? sendReply,
+    TResult Function(AnnouncementModel model)? like,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -60,6 +63,7 @@ mixin _$AnnouncementTabEvent {
     required TResult Function(DeleteAnnouncement value) deleteAnnouncement,
     required TResult Function(ShowReplyInput value) showReplyInput,
     required TResult Function(SendReply value) sendReply,
+    required TResult Function(Like value) like,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -71,6 +75,7 @@ mixin _$AnnouncementTabEvent {
     TResult? Function(DeleteAnnouncement value)? deleteAnnouncement,
     TResult? Function(ShowReplyInput value)? showReplyInput,
     TResult? Function(SendReply value)? sendReply,
+    TResult? Function(Like value)? like,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -82,6 +87,7 @@ mixin _$AnnouncementTabEvent {
     TResult Function(DeleteAnnouncement value)? deleteAnnouncement,
     TResult Function(ShowReplyInput value)? showReplyInput,
     TResult Function(SendReply value)? sendReply,
+    TResult Function(Like value)? like,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -161,6 +167,7 @@ class _$ShowInputSectionImpl
     required TResult Function(AnnouncementModel? announcementModel)
         showReplyInput,
     required TResult Function(AnnouncementModel model) sendReply,
+    required TResult Function(AnnouncementModel model) like,
   }) {
     return showInputSection();
   }
@@ -175,6 +182,7 @@ class _$ShowInputSectionImpl
     TResult? Function(int id)? deleteAnnouncement,
     TResult? Function(AnnouncementModel? announcementModel)? showReplyInput,
     TResult? Function(AnnouncementModel model)? sendReply,
+    TResult? Function(AnnouncementModel model)? like,
   }) {
     return showInputSection?.call();
   }
@@ -189,6 +197,7 @@ class _$ShowInputSectionImpl
     TResult Function(int id)? deleteAnnouncement,
     TResult Function(AnnouncementModel? announcementModel)? showReplyInput,
     TResult Function(AnnouncementModel model)? sendReply,
+    TResult Function(AnnouncementModel model)? like,
     required TResult orElse(),
   }) {
     if (showInputSection != null) {
@@ -207,6 +216,7 @@ class _$ShowInputSectionImpl
     required TResult Function(DeleteAnnouncement value) deleteAnnouncement,
     required TResult Function(ShowReplyInput value) showReplyInput,
     required TResult Function(SendReply value) sendReply,
+    required TResult Function(Like value) like,
   }) {
     return showInputSection(this);
   }
@@ -221,6 +231,7 @@ class _$ShowInputSectionImpl
     TResult? Function(DeleteAnnouncement value)? deleteAnnouncement,
     TResult? Function(ShowReplyInput value)? showReplyInput,
     TResult? Function(SendReply value)? sendReply,
+    TResult? Function(Like value)? like,
   }) {
     return showInputSection?.call(this);
   }
@@ -235,6 +246,7 @@ class _$ShowInputSectionImpl
     TResult Function(DeleteAnnouncement value)? deleteAnnouncement,
     TResult Function(ShowReplyInput value)? showReplyInput,
     TResult Function(SendReply value)? sendReply,
+    TResult Function(Like value)? like,
     required TResult orElse(),
   }) {
     if (showInputSection != null) {
@@ -304,6 +316,7 @@ class _$GetAllAnnouncementsImpl
     required TResult Function(AnnouncementModel? announcementModel)
         showReplyInput,
     required TResult Function(AnnouncementModel model) sendReply,
+    required TResult Function(AnnouncementModel model) like,
   }) {
     return getAllAnnouncements();
   }
@@ -318,6 +331,7 @@ class _$GetAllAnnouncementsImpl
     TResult? Function(int id)? deleteAnnouncement,
     TResult? Function(AnnouncementModel? announcementModel)? showReplyInput,
     TResult? Function(AnnouncementModel model)? sendReply,
+    TResult? Function(AnnouncementModel model)? like,
   }) {
     return getAllAnnouncements?.call();
   }
@@ -332,6 +346,7 @@ class _$GetAllAnnouncementsImpl
     TResult Function(int id)? deleteAnnouncement,
     TResult Function(AnnouncementModel? announcementModel)? showReplyInput,
     TResult Function(AnnouncementModel model)? sendReply,
+    TResult Function(AnnouncementModel model)? like,
     required TResult orElse(),
   }) {
     if (getAllAnnouncements != null) {
@@ -350,6 +365,7 @@ class _$GetAllAnnouncementsImpl
     required TResult Function(DeleteAnnouncement value) deleteAnnouncement,
     required TResult Function(ShowReplyInput value) showReplyInput,
     required TResult Function(SendReply value) sendReply,
+    required TResult Function(Like value) like,
   }) {
     return getAllAnnouncements(this);
   }
@@ -364,6 +380,7 @@ class _$GetAllAnnouncementsImpl
     TResult? Function(DeleteAnnouncement value)? deleteAnnouncement,
     TResult? Function(ShowReplyInput value)? showReplyInput,
     TResult? Function(SendReply value)? sendReply,
+    TResult? Function(Like value)? like,
   }) {
     return getAllAnnouncements?.call(this);
   }
@@ -378,6 +395,7 @@ class _$GetAllAnnouncementsImpl
     TResult Function(DeleteAnnouncement value)? deleteAnnouncement,
     TResult Function(ShowReplyInput value)? showReplyInput,
     TResult Function(SendReply value)? sendReply,
+    TResult Function(Like value)? like,
     required TResult orElse(),
   }) {
     if (getAllAnnouncements != null) {
@@ -446,6 +464,7 @@ class _$AddAnnouncementImpl
     required TResult Function(AnnouncementModel? announcementModel)
         showReplyInput,
     required TResult Function(AnnouncementModel model) sendReply,
+    required TResult Function(AnnouncementModel model) like,
   }) {
     return addAnnouncement();
   }
@@ -460,6 +479,7 @@ class _$AddAnnouncementImpl
     TResult? Function(int id)? deleteAnnouncement,
     TResult? Function(AnnouncementModel? announcementModel)? showReplyInput,
     TResult? Function(AnnouncementModel model)? sendReply,
+    TResult? Function(AnnouncementModel model)? like,
   }) {
     return addAnnouncement?.call();
   }
@@ -474,6 +494,7 @@ class _$AddAnnouncementImpl
     TResult Function(int id)? deleteAnnouncement,
     TResult Function(AnnouncementModel? announcementModel)? showReplyInput,
     TResult Function(AnnouncementModel model)? sendReply,
+    TResult Function(AnnouncementModel model)? like,
     required TResult orElse(),
   }) {
     if (addAnnouncement != null) {
@@ -492,6 +513,7 @@ class _$AddAnnouncementImpl
     required TResult Function(DeleteAnnouncement value) deleteAnnouncement,
     required TResult Function(ShowReplyInput value) showReplyInput,
     required TResult Function(SendReply value) sendReply,
+    required TResult Function(Like value) like,
   }) {
     return addAnnouncement(this);
   }
@@ -506,6 +528,7 @@ class _$AddAnnouncementImpl
     TResult? Function(DeleteAnnouncement value)? deleteAnnouncement,
     TResult? Function(ShowReplyInput value)? showReplyInput,
     TResult? Function(SendReply value)? sendReply,
+    TResult? Function(Like value)? like,
   }) {
     return addAnnouncement?.call(this);
   }
@@ -520,6 +543,7 @@ class _$AddAnnouncementImpl
     TResult Function(DeleteAnnouncement value)? deleteAnnouncement,
     TResult Function(ShowReplyInput value)? showReplyInput,
     TResult Function(SendReply value)? sendReply,
+    TResult Function(Like value)? like,
     required TResult orElse(),
   }) {
     if (addAnnouncement != null) {
@@ -586,6 +610,7 @@ class _$PickFileImpl with DiagnosticableTreeMixin implements PickFile {
     required TResult Function(AnnouncementModel? announcementModel)
         showReplyInput,
     required TResult Function(AnnouncementModel model) sendReply,
+    required TResult Function(AnnouncementModel model) like,
   }) {
     return pickFile();
   }
@@ -600,6 +625,7 @@ class _$PickFileImpl with DiagnosticableTreeMixin implements PickFile {
     TResult? Function(int id)? deleteAnnouncement,
     TResult? Function(AnnouncementModel? announcementModel)? showReplyInput,
     TResult? Function(AnnouncementModel model)? sendReply,
+    TResult? Function(AnnouncementModel model)? like,
   }) {
     return pickFile?.call();
   }
@@ -614,6 +640,7 @@ class _$PickFileImpl with DiagnosticableTreeMixin implements PickFile {
     TResult Function(int id)? deleteAnnouncement,
     TResult Function(AnnouncementModel? announcementModel)? showReplyInput,
     TResult Function(AnnouncementModel model)? sendReply,
+    TResult Function(AnnouncementModel model)? like,
     required TResult orElse(),
   }) {
     if (pickFile != null) {
@@ -632,6 +659,7 @@ class _$PickFileImpl with DiagnosticableTreeMixin implements PickFile {
     required TResult Function(DeleteAnnouncement value) deleteAnnouncement,
     required TResult Function(ShowReplyInput value) showReplyInput,
     required TResult Function(SendReply value) sendReply,
+    required TResult Function(Like value) like,
   }) {
     return pickFile(this);
   }
@@ -646,6 +674,7 @@ class _$PickFileImpl with DiagnosticableTreeMixin implements PickFile {
     TResult? Function(DeleteAnnouncement value)? deleteAnnouncement,
     TResult? Function(ShowReplyInput value)? showReplyInput,
     TResult? Function(SendReply value)? sendReply,
+    TResult? Function(Like value)? like,
   }) {
     return pickFile?.call(this);
   }
@@ -660,6 +689,7 @@ class _$PickFileImpl with DiagnosticableTreeMixin implements PickFile {
     TResult Function(DeleteAnnouncement value)? deleteAnnouncement,
     TResult Function(ShowReplyInput value)? showReplyInput,
     TResult Function(SendReply value)? sendReply,
+    TResult Function(Like value)? like,
     required TResult orElse(),
   }) {
     if (pickFile != null) {
@@ -757,6 +787,7 @@ class _$DeleteAnnouncementImpl
     required TResult Function(AnnouncementModel? announcementModel)
         showReplyInput,
     required TResult Function(AnnouncementModel model) sendReply,
+    required TResult Function(AnnouncementModel model) like,
   }) {
     return deleteAnnouncement(id);
   }
@@ -771,6 +802,7 @@ class _$DeleteAnnouncementImpl
     TResult? Function(int id)? deleteAnnouncement,
     TResult? Function(AnnouncementModel? announcementModel)? showReplyInput,
     TResult? Function(AnnouncementModel model)? sendReply,
+    TResult? Function(AnnouncementModel model)? like,
   }) {
     return deleteAnnouncement?.call(id);
   }
@@ -785,6 +817,7 @@ class _$DeleteAnnouncementImpl
     TResult Function(int id)? deleteAnnouncement,
     TResult Function(AnnouncementModel? announcementModel)? showReplyInput,
     TResult Function(AnnouncementModel model)? sendReply,
+    TResult Function(AnnouncementModel model)? like,
     required TResult orElse(),
   }) {
     if (deleteAnnouncement != null) {
@@ -803,6 +836,7 @@ class _$DeleteAnnouncementImpl
     required TResult Function(DeleteAnnouncement value) deleteAnnouncement,
     required TResult Function(ShowReplyInput value) showReplyInput,
     required TResult Function(SendReply value) sendReply,
+    required TResult Function(Like value) like,
   }) {
     return deleteAnnouncement(this);
   }
@@ -817,6 +851,7 @@ class _$DeleteAnnouncementImpl
     TResult? Function(DeleteAnnouncement value)? deleteAnnouncement,
     TResult? Function(ShowReplyInput value)? showReplyInput,
     TResult? Function(SendReply value)? sendReply,
+    TResult? Function(Like value)? like,
   }) {
     return deleteAnnouncement?.call(this);
   }
@@ -831,6 +866,7 @@ class _$DeleteAnnouncementImpl
     TResult Function(DeleteAnnouncement value)? deleteAnnouncement,
     TResult Function(ShowReplyInput value)? showReplyInput,
     TResult Function(SendReply value)? sendReply,
+    TResult Function(Like value)? like,
     required TResult orElse(),
   }) {
     if (deleteAnnouncement != null) {
@@ -934,6 +970,7 @@ class _$ShowReplyInputImpl
     required TResult Function(AnnouncementModel? announcementModel)
         showReplyInput,
     required TResult Function(AnnouncementModel model) sendReply,
+    required TResult Function(AnnouncementModel model) like,
   }) {
     return showReplyInput(announcementModel);
   }
@@ -948,6 +985,7 @@ class _$ShowReplyInputImpl
     TResult? Function(int id)? deleteAnnouncement,
     TResult? Function(AnnouncementModel? announcementModel)? showReplyInput,
     TResult? Function(AnnouncementModel model)? sendReply,
+    TResult? Function(AnnouncementModel model)? like,
   }) {
     return showReplyInput?.call(announcementModel);
   }
@@ -962,6 +1000,7 @@ class _$ShowReplyInputImpl
     TResult Function(int id)? deleteAnnouncement,
     TResult Function(AnnouncementModel? announcementModel)? showReplyInput,
     TResult Function(AnnouncementModel model)? sendReply,
+    TResult Function(AnnouncementModel model)? like,
     required TResult orElse(),
   }) {
     if (showReplyInput != null) {
@@ -980,6 +1019,7 @@ class _$ShowReplyInputImpl
     required TResult Function(DeleteAnnouncement value) deleteAnnouncement,
     required TResult Function(ShowReplyInput value) showReplyInput,
     required TResult Function(SendReply value) sendReply,
+    required TResult Function(Like value) like,
   }) {
     return showReplyInput(this);
   }
@@ -994,6 +1034,7 @@ class _$ShowReplyInputImpl
     TResult? Function(DeleteAnnouncement value)? deleteAnnouncement,
     TResult? Function(ShowReplyInput value)? showReplyInput,
     TResult? Function(SendReply value)? sendReply,
+    TResult? Function(Like value)? like,
   }) {
     return showReplyInput?.call(this);
   }
@@ -1008,6 +1049,7 @@ class _$ShowReplyInputImpl
     TResult Function(DeleteAnnouncement value)? deleteAnnouncement,
     TResult Function(ShowReplyInput value)? showReplyInput,
     TResult Function(SendReply value)? sendReply,
+    TResult Function(Like value)? like,
     required TResult orElse(),
   }) {
     if (showReplyInput != null) {
@@ -1108,6 +1150,7 @@ class _$SendReplyImpl with DiagnosticableTreeMixin implements SendReply {
     required TResult Function(AnnouncementModel? announcementModel)
         showReplyInput,
     required TResult Function(AnnouncementModel model) sendReply,
+    required TResult Function(AnnouncementModel model) like,
   }) {
     return sendReply(model);
   }
@@ -1122,6 +1165,7 @@ class _$SendReplyImpl with DiagnosticableTreeMixin implements SendReply {
     TResult? Function(int id)? deleteAnnouncement,
     TResult? Function(AnnouncementModel? announcementModel)? showReplyInput,
     TResult? Function(AnnouncementModel model)? sendReply,
+    TResult? Function(AnnouncementModel model)? like,
   }) {
     return sendReply?.call(model);
   }
@@ -1136,6 +1180,7 @@ class _$SendReplyImpl with DiagnosticableTreeMixin implements SendReply {
     TResult Function(int id)? deleteAnnouncement,
     TResult Function(AnnouncementModel? announcementModel)? showReplyInput,
     TResult Function(AnnouncementModel model)? sendReply,
+    TResult Function(AnnouncementModel model)? like,
     required TResult orElse(),
   }) {
     if (sendReply != null) {
@@ -1154,6 +1199,7 @@ class _$SendReplyImpl with DiagnosticableTreeMixin implements SendReply {
     required TResult Function(DeleteAnnouncement value) deleteAnnouncement,
     required TResult Function(ShowReplyInput value) showReplyInput,
     required TResult Function(SendReply value) sendReply,
+    required TResult Function(Like value) like,
   }) {
     return sendReply(this);
   }
@@ -1168,6 +1214,7 @@ class _$SendReplyImpl with DiagnosticableTreeMixin implements SendReply {
     TResult? Function(DeleteAnnouncement value)? deleteAnnouncement,
     TResult? Function(ShowReplyInput value)? showReplyInput,
     TResult? Function(SendReply value)? sendReply,
+    TResult? Function(Like value)? like,
   }) {
     return sendReply?.call(this);
   }
@@ -1182,6 +1229,7 @@ class _$SendReplyImpl with DiagnosticableTreeMixin implements SendReply {
     TResult Function(DeleteAnnouncement value)? deleteAnnouncement,
     TResult Function(ShowReplyInput value)? showReplyInput,
     TResult Function(SendReply value)? sendReply,
+    TResult Function(Like value)? like,
     required TResult orElse(),
   }) {
     if (sendReply != null) {
@@ -1198,6 +1246,183 @@ abstract class SendReply implements AnnouncementTabEvent {
   AnnouncementModel get model;
   @JsonKey(ignore: true)
   _$$SendReplyImplCopyWith<_$SendReplyImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$LikeImplCopyWith<$Res> {
+  factory _$$LikeImplCopyWith(
+          _$LikeImpl value, $Res Function(_$LikeImpl) then) =
+      __$$LikeImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({AnnouncementModel model});
+}
+
+/// @nodoc
+class __$$LikeImplCopyWithImpl<$Res>
+    extends _$AnnouncementTabEventCopyWithImpl<$Res, _$LikeImpl>
+    implements _$$LikeImplCopyWith<$Res> {
+  __$$LikeImplCopyWithImpl(_$LikeImpl _value, $Res Function(_$LikeImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? model = null,
+  }) {
+    return _then(_$LikeImpl(
+      model: null == model
+          ? _value.model
+          : model // ignore: cast_nullable_to_non_nullable
+              as AnnouncementModel,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$LikeImpl with DiagnosticableTreeMixin implements Like {
+  const _$LikeImpl({required this.model});
+
+  @override
+  final AnnouncementModel model;
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'AnnouncementTabEvent.like(model: $model)';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+      ..add(DiagnosticsProperty('type', 'AnnouncementTabEvent.like'))
+      ..add(DiagnosticsProperty('model', model));
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$LikeImpl &&
+            (identical(other.model, model) || other.model == model));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, model);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$LikeImplCopyWith<_$LikeImpl> get copyWith =>
+      __$$LikeImplCopyWithImpl<_$LikeImpl>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() showInputSection,
+    required TResult Function() getAllAnnouncements,
+    required TResult Function() addAnnouncement,
+    required TResult Function() pickFile,
+    required TResult Function(int id) deleteAnnouncement,
+    required TResult Function(AnnouncementModel? announcementModel)
+        showReplyInput,
+    required TResult Function(AnnouncementModel model) sendReply,
+    required TResult Function(AnnouncementModel model) like,
+  }) {
+    return like(model);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? showInputSection,
+    TResult? Function()? getAllAnnouncements,
+    TResult? Function()? addAnnouncement,
+    TResult? Function()? pickFile,
+    TResult? Function(int id)? deleteAnnouncement,
+    TResult? Function(AnnouncementModel? announcementModel)? showReplyInput,
+    TResult? Function(AnnouncementModel model)? sendReply,
+    TResult? Function(AnnouncementModel model)? like,
+  }) {
+    return like?.call(model);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? showInputSection,
+    TResult Function()? getAllAnnouncements,
+    TResult Function()? addAnnouncement,
+    TResult Function()? pickFile,
+    TResult Function(int id)? deleteAnnouncement,
+    TResult Function(AnnouncementModel? announcementModel)? showReplyInput,
+    TResult Function(AnnouncementModel model)? sendReply,
+    TResult Function(AnnouncementModel model)? like,
+    required TResult orElse(),
+  }) {
+    if (like != null) {
+      return like(model);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(ShowInputSection value) showInputSection,
+    required TResult Function(GetAllAnnouncements value) getAllAnnouncements,
+    required TResult Function(AddAnnouncement value) addAnnouncement,
+    required TResult Function(PickFile value) pickFile,
+    required TResult Function(DeleteAnnouncement value) deleteAnnouncement,
+    required TResult Function(ShowReplyInput value) showReplyInput,
+    required TResult Function(SendReply value) sendReply,
+    required TResult Function(Like value) like,
+  }) {
+    return like(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(ShowInputSection value)? showInputSection,
+    TResult? Function(GetAllAnnouncements value)? getAllAnnouncements,
+    TResult? Function(AddAnnouncement value)? addAnnouncement,
+    TResult? Function(PickFile value)? pickFile,
+    TResult? Function(DeleteAnnouncement value)? deleteAnnouncement,
+    TResult? Function(ShowReplyInput value)? showReplyInput,
+    TResult? Function(SendReply value)? sendReply,
+    TResult? Function(Like value)? like,
+  }) {
+    return like?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(ShowInputSection value)? showInputSection,
+    TResult Function(GetAllAnnouncements value)? getAllAnnouncements,
+    TResult Function(AddAnnouncement value)? addAnnouncement,
+    TResult Function(PickFile value)? pickFile,
+    TResult Function(DeleteAnnouncement value)? deleteAnnouncement,
+    TResult Function(ShowReplyInput value)? showReplyInput,
+    TResult Function(SendReply value)? sendReply,
+    TResult Function(Like value)? like,
+    required TResult orElse(),
+  }) {
+    if (like != null) {
+      return like(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class Like implements AnnouncementTabEvent {
+  const factory Like({required final AnnouncementModel model}) = _$LikeImpl;
+
+  AnnouncementModel get model;
+  @JsonKey(ignore: true)
+  _$$LikeImplCopyWith<_$LikeImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 

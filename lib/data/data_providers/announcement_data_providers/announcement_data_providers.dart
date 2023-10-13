@@ -41,6 +41,18 @@ class AnnouncementDataProvider {
     await db.close();
   }
 
+  Future<void> like(AnnouncementModel announcementModel) async {
+    final db = await getDbObject();
+    AnnouncementModel announcementModelNew = AnnouncementModel(
+        message: announcementModel.message,
+        time: announcementModel.time,
+        replays: announcementModel.replays,
+        filePath: announcementModel.filePath,
+        likeCount: announcementModel.likeCount + 1);
+    await db.put(announcementModel.key, announcementModelNew);
+    await db.close();
+  }
+
   //Making singleton
   static AnnouncementDataProvider announcementDataProvider =
       AnnouncementDataProvider._internal();
