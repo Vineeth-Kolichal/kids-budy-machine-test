@@ -120,7 +120,7 @@ class _DocumentDetailsSectionState extends State<DocumentDetailsSection> {
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(
-                'View all replys',
+                'View all replies',
                 style: TextStyle(fontSize: 15, color: Colors.black),
               ),
               Icon(
@@ -168,7 +168,7 @@ class _DocumentDetailsSectionState extends State<DocumentDetailsSection> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   const Text(
-                    'All replys',
+                    'All replies',
                     style: TextStyle(fontSize: 17, fontWeight: FontWeight.w600),
                   ),
                   IconButton(
