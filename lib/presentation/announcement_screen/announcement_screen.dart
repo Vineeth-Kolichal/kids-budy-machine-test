@@ -17,7 +17,11 @@ class AnnouncementScreen extends StatelessWidget {
             onPressed: () {
               Navigator.of(context).pop();
             },
-            icon: const Icon(Icons.arrow_back_ios),
+            icon: Icon(
+              Icons.arrow_back_ios,
+              size: 15,
+              color: Colors.pink[900],
+            ),
           ),
           title: const Text('Announcement'),
         ),
