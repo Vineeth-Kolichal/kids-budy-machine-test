@@ -1,6 +1,8 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:kids_buddy/bloc/announcement_tab_bloc/announcement_tab_bloc.dart';
 import 'package:open_file/open_file.dart';
 
 import '../../../../../data/models/announcement_model/announcement_model.dart';
@@ -106,10 +108,31 @@ class _DocumentDetailsSectionState extends State<DocumentDetailsSection> {
           ],
         ),
         Space.y(10),
-        InkWell(onTap: () {}, child: const Text('View all replay')),
+        InkWell(
+          onTap: () {
+            replaysBottomSheet(context, size, widget.announcementModel.replays);
+          },
+          child: const Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(
+                'View all replys',
+                style: TextStyle(fontSize: 15, color: Colors.black),
+              ),
+              Icon(
+                Icons.arrow_drop_down,
+                size: 15,
+                color: Colors.black,
+              )
+            ],
+          ),
+        ),
         Space.y(10),
         InkWell(
-          onTap: () {},
+          onTap: () {
+            context.read<AnnouncementTabBloc>().add(
+                ShowReplyInput(announcementModel: widget.announcementModel));
+          },
           child: const Row(
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -117,12 +140,61 @@ class _DocumentDetailsSectionState extends State<DocumentDetailsSection> {
                 Icons.reply_sharp,
                 size: 15,
               ),
-              Text('Replay')
+              Text('Reply')
             ],
           ),
         ),
         Space.y(10),
       ],
+    );
+  }
+
+  PersistentBottomSheetController<dynamic> replaysBottomSheet(
+      BuildContext context, Size size, List<String> replayList) {
+    return showBottomSheet(
+      elevation: 3,
+      context: context,
+      builder: (context) => SizedBox(
+        height: size.height * 0.5,
+        child: Padding(
+          padding: const EdgeInsets.all(15.0),
+          child: Column(
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const Text(
+                    'All replys',
+                    style: TextStyle(fontSize: 17, fontWeight: FontWeight.w600),
+                  ),
+                  IconButton(
+                      onPressed: () {
+                        Navigator.of(context).pop();
+                      },
+                      icon: const Icon(Icons.close))
+                ],
+              ),
+              const Divider(),
+              Expanded(
+                child: (replayList.isEmpty)
+                    ? const Center(
+                        child: Text('No replys'),
+                      )
+                    : ListView.separated(
+                        itemBuilder: (context, index) => Container(
+                              padding: const EdgeInsets.all(15),
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(15),
+                                  color: whiteColor),
+                              child: Text(replayList[index]),
+                            ),
+                        separatorBuilder: (context, index) => Space.y(10),
+                        itemCount: replayList.length),
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }

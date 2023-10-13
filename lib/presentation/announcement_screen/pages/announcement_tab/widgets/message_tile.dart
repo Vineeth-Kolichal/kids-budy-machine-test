@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
@@ -21,7 +20,7 @@ class MessageTile extends StatelessWidget {
     return Align(
       alignment: Alignment.centerRight,
       child: ConstrainedBox(
-        constraints: BoxConstraints(maxWidth: size.width * 0.85),
+        constraints: BoxConstraints(maxWidth: size.width * 0.9),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.end,
           mainAxisSize: MainAxisSize.min,
@@ -92,4 +91,3 @@ class MessageTile extends StatelessWidget {
     );
   }
 }
-

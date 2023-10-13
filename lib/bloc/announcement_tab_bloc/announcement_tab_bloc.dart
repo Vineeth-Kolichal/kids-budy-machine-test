@@ -23,7 +23,7 @@ class AnnouncementTabBloc
 
   File? pickedFile;
   AnnouncementTabBloc() : super(AnnouncementTabState.initial()) {
-    //
+    //get all announcement model objects an  emit to UI
     on<GetAllAnnouncements>((event, emit) async {
       await announcementDataProvider
           .getAllAnnouncements()
@@ -32,20 +32,24 @@ class AnnouncementTabBloc
           emit(state.copyWith(
               showInitialMessageScreen: true,
               announcementList: [],
-              pickedFileName: null));
+              pickedFileName: null,
+              replayItem: null));
         } else {
           emit(state.copyWith(
               showInitialMessageScreen: false,
               announcementList: announcementList,
-              pickedFileName: null));
+              pickedFileName: null,
+              replayItem: null));
         }
       });
     });
-
+    //Show input arear in UI
     on<ShowInputSection>((event, emit) {
       emit(state.copyWith(showInitialMessageScreen: false));
     });
 
+
+    //Adding new announcement
     on<AddAnnouncement>((event, emit) async {
       if (announcementController.text.isNotEmpty) {
         await announcementDataProvider
@@ -64,11 +68,14 @@ class AnnouncementTabBloc
       }
     });
 
+    //Deleting an announcement while clicking T icon
     on<DeleteAnnouncement>((event, emit) async {
       await announcementDataProvider.deleteAnnouncement(event.id);
       add(const GetAllAnnouncements());
     });
 
+
+    //Pick document file
     on<PickFile>((event, emit) async {
       await FilePicker.platform.pickFiles(
         type: FileType.custom,
@@ -82,6 +89,22 @@ class AnnouncementTabBloc
           emit(state.copyWith(pickedFileName: res.last));
         }
         return null;
+      });
+    });
+
+
+    //showing replay input section while clicking replay in messagetile
+    on<ShowReplyInput>((event, emit) {
+      emit(state.copyWith(replayItem: event.announcementModel));
+    });
+    
+
+    //adding replay to database
+    on<SendReply>((event, emit) async {
+      event.model.replays.add(announcementController.text.trim());
+      await announcementDataProvider.addReply(event.model).then((_) {
+        announcementController.clear();
+        add(const GetAllAnnouncements());
       });
     });
   }

@@ -48,7 +48,7 @@ class AnnouncementScreen extends StatelessWidget {
                 ),
                 const Spacer(),
                 SizedBox(
-                  height: 50,
+                  height: 35,
                   child: Row(
                     children: [
                       Visibility(

@@ -23,6 +23,9 @@ mixin _$AnnouncementTabEvent {
     required TResult Function() addAnnouncement,
     required TResult Function() pickFile,
     required TResult Function(int id) deleteAnnouncement,
+    required TResult Function(AnnouncementModel? announcementModel)
+        showReplyInput,
+    required TResult Function(AnnouncementModel model) sendReply,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -32,6 +35,8 @@ mixin _$AnnouncementTabEvent {
     TResult? Function()? addAnnouncement,
     TResult? Function()? pickFile,
     TResult? Function(int id)? deleteAnnouncement,
+    TResult? Function(AnnouncementModel? announcementModel)? showReplyInput,
+    TResult? Function(AnnouncementModel model)? sendReply,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -41,6 +46,8 @@ mixin _$AnnouncementTabEvent {
     TResult Function()? addAnnouncement,
     TResult Function()? pickFile,
     TResult Function(int id)? deleteAnnouncement,
+    TResult Function(AnnouncementModel? announcementModel)? showReplyInput,
+    TResult Function(AnnouncementModel model)? sendReply,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -51,6 +58,8 @@ mixin _$AnnouncementTabEvent {
     required TResult Function(AddAnnouncement value) addAnnouncement,
     required TResult Function(PickFile value) pickFile,
     required TResult Function(DeleteAnnouncement value) deleteAnnouncement,
+    required TResult Function(ShowReplyInput value) showReplyInput,
+    required TResult Function(SendReply value) sendReply,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -60,6 +69,8 @@ mixin _$AnnouncementTabEvent {
     TResult? Function(AddAnnouncement value)? addAnnouncement,
     TResult? Function(PickFile value)? pickFile,
     TResult? Function(DeleteAnnouncement value)? deleteAnnouncement,
+    TResult? Function(ShowReplyInput value)? showReplyInput,
+    TResult? Function(SendReply value)? sendReply,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -69,6 +80,8 @@ mixin _$AnnouncementTabEvent {
     TResult Function(AddAnnouncement value)? addAnnouncement,
     TResult Function(PickFile value)? pickFile,
     TResult Function(DeleteAnnouncement value)? deleteAnnouncement,
+    TResult Function(ShowReplyInput value)? showReplyInput,
+    TResult Function(SendReply value)? sendReply,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -145,6 +158,9 @@ class _$ShowInputSectionImpl
     required TResult Function() addAnnouncement,
     required TResult Function() pickFile,
     required TResult Function(int id) deleteAnnouncement,
+    required TResult Function(AnnouncementModel? announcementModel)
+        showReplyInput,
+    required TResult Function(AnnouncementModel model) sendReply,
   }) {
     return showInputSection();
   }
@@ -157,6 +173,8 @@ class _$ShowInputSectionImpl
     TResult? Function()? addAnnouncement,
     TResult? Function()? pickFile,
     TResult? Function(int id)? deleteAnnouncement,
+    TResult? Function(AnnouncementModel? announcementModel)? showReplyInput,
+    TResult? Function(AnnouncementModel model)? sendReply,
   }) {
     return showInputSection?.call();
   }
@@ -169,6 +187,8 @@ class _$ShowInputSectionImpl
     TResult Function()? addAnnouncement,
     TResult Function()? pickFile,
     TResult Function(int id)? deleteAnnouncement,
+    TResult Function(AnnouncementModel? announcementModel)? showReplyInput,
+    TResult Function(AnnouncementModel model)? sendReply,
     required TResult orElse(),
   }) {
     if (showInputSection != null) {
@@ -185,6 +205,8 @@ class _$ShowInputSectionImpl
     required TResult Function(AddAnnouncement value) addAnnouncement,
     required TResult Function(PickFile value) pickFile,
     required TResult Function(DeleteAnnouncement value) deleteAnnouncement,
+    required TResult Function(ShowReplyInput value) showReplyInput,
+    required TResult Function(SendReply value) sendReply,
   }) {
     return showInputSection(this);
   }
@@ -197,6 +219,8 @@ class _$ShowInputSectionImpl
     TResult? Function(AddAnnouncement value)? addAnnouncement,
     TResult? Function(PickFile value)? pickFile,
     TResult? Function(DeleteAnnouncement value)? deleteAnnouncement,
+    TResult? Function(ShowReplyInput value)? showReplyInput,
+    TResult? Function(SendReply value)? sendReply,
   }) {
     return showInputSection?.call(this);
   }
@@ -209,6 +233,8 @@ class _$ShowInputSectionImpl
     TResult Function(AddAnnouncement value)? addAnnouncement,
     TResult Function(PickFile value)? pickFile,
     TResult Function(DeleteAnnouncement value)? deleteAnnouncement,
+    TResult Function(ShowReplyInput value)? showReplyInput,
+    TResult Function(SendReply value)? sendReply,
     required TResult orElse(),
   }) {
     if (showInputSection != null) {
@@ -275,6 +301,9 @@ class _$GetAllAnnouncementsImpl
     required TResult Function() addAnnouncement,
     required TResult Function() pickFile,
     required TResult Function(int id) deleteAnnouncement,
+    required TResult Function(AnnouncementModel? announcementModel)
+        showReplyInput,
+    required TResult Function(AnnouncementModel model) sendReply,
   }) {
     return getAllAnnouncements();
   }
@@ -287,6 +316,8 @@ class _$GetAllAnnouncementsImpl
     TResult? Function()? addAnnouncement,
     TResult? Function()? pickFile,
     TResult? Function(int id)? deleteAnnouncement,
+    TResult? Function(AnnouncementModel? announcementModel)? showReplyInput,
+    TResult? Function(AnnouncementModel model)? sendReply,
   }) {
     return getAllAnnouncements?.call();
   }
@@ -299,6 +330,8 @@ class _$GetAllAnnouncementsImpl
     TResult Function()? addAnnouncement,
     TResult Function()? pickFile,
     TResult Function(int id)? deleteAnnouncement,
+    TResult Function(AnnouncementModel? announcementModel)? showReplyInput,
+    TResult Function(AnnouncementModel model)? sendReply,
     required TResult orElse(),
   }) {
     if (getAllAnnouncements != null) {
@@ -315,6 +348,8 @@ class _$GetAllAnnouncementsImpl
     required TResult Function(AddAnnouncement value) addAnnouncement,
     required TResult Function(PickFile value) pickFile,
     required TResult Function(DeleteAnnouncement value) deleteAnnouncement,
+    required TResult Function(ShowReplyInput value) showReplyInput,
+    required TResult Function(SendReply value) sendReply,
   }) {
     return getAllAnnouncements(this);
   }
@@ -327,6 +362,8 @@ class _$GetAllAnnouncementsImpl
     TResult? Function(AddAnnouncement value)? addAnnouncement,
     TResult? Function(PickFile value)? pickFile,
     TResult? Function(DeleteAnnouncement value)? deleteAnnouncement,
+    TResult? Function(ShowReplyInput value)? showReplyInput,
+    TResult? Function(SendReply value)? sendReply,
   }) {
     return getAllAnnouncements?.call(this);
   }
@@ -339,6 +376,8 @@ class _$GetAllAnnouncementsImpl
     TResult Function(AddAnnouncement value)? addAnnouncement,
     TResult Function(PickFile value)? pickFile,
     TResult Function(DeleteAnnouncement value)? deleteAnnouncement,
+    TResult Function(ShowReplyInput value)? showReplyInput,
+    TResult Function(SendReply value)? sendReply,
     required TResult orElse(),
   }) {
     if (getAllAnnouncements != null) {
@@ -404,6 +443,9 @@ class _$AddAnnouncementImpl
     required TResult Function() addAnnouncement,
     required TResult Function() pickFile,
     required TResult Function(int id) deleteAnnouncement,
+    required TResult Function(AnnouncementModel? announcementModel)
+        showReplyInput,
+    required TResult Function(AnnouncementModel model) sendReply,
   }) {
     return addAnnouncement();
   }
@@ -416,6 +458,8 @@ class _$AddAnnouncementImpl
     TResult? Function()? addAnnouncement,
     TResult? Function()? pickFile,
     TResult? Function(int id)? deleteAnnouncement,
+    TResult? Function(AnnouncementModel? announcementModel)? showReplyInput,
+    TResult? Function(AnnouncementModel model)? sendReply,
   }) {
     return addAnnouncement?.call();
   }
@@ -428,6 +472,8 @@ class _$AddAnnouncementImpl
     TResult Function()? addAnnouncement,
     TResult Function()? pickFile,
     TResult Function(int id)? deleteAnnouncement,
+    TResult Function(AnnouncementModel? announcementModel)? showReplyInput,
+    TResult Function(AnnouncementModel model)? sendReply,
     required TResult orElse(),
   }) {
     if (addAnnouncement != null) {
@@ -444,6 +490,8 @@ class _$AddAnnouncementImpl
     required TResult Function(AddAnnouncement value) addAnnouncement,
     required TResult Function(PickFile value) pickFile,
     required TResult Function(DeleteAnnouncement value) deleteAnnouncement,
+    required TResult Function(ShowReplyInput value) showReplyInput,
+    required TResult Function(SendReply value) sendReply,
   }) {
     return addAnnouncement(this);
   }
@@ -456,6 +504,8 @@ class _$AddAnnouncementImpl
     TResult? Function(AddAnnouncement value)? addAnnouncement,
     TResult? Function(PickFile value)? pickFile,
     TResult? Function(DeleteAnnouncement value)? deleteAnnouncement,
+    TResult? Function(ShowReplyInput value)? showReplyInput,
+    TResult? Function(SendReply value)? sendReply,
   }) {
     return addAnnouncement?.call(this);
   }
@@ -468,6 +518,8 @@ class _$AddAnnouncementImpl
     TResult Function(AddAnnouncement value)? addAnnouncement,
     TResult Function(PickFile value)? pickFile,
     TResult Function(DeleteAnnouncement value)? deleteAnnouncement,
+    TResult Function(ShowReplyInput value)? showReplyInput,
+    TResult Function(SendReply value)? sendReply,
     required TResult orElse(),
   }) {
     if (addAnnouncement != null) {
@@ -531,6 +583,9 @@ class _$PickFileImpl with DiagnosticableTreeMixin implements PickFile {
     required TResult Function() addAnnouncement,
     required TResult Function() pickFile,
     required TResult Function(int id) deleteAnnouncement,
+    required TResult Function(AnnouncementModel? announcementModel)
+        showReplyInput,
+    required TResult Function(AnnouncementModel model) sendReply,
   }) {
     return pickFile();
   }
@@ -543,6 +598,8 @@ class _$PickFileImpl with DiagnosticableTreeMixin implements PickFile {
     TResult? Function()? addAnnouncement,
     TResult? Function()? pickFile,
     TResult? Function(int id)? deleteAnnouncement,
+    TResult? Function(AnnouncementModel? announcementModel)? showReplyInput,
+    TResult? Function(AnnouncementModel model)? sendReply,
   }) {
     return pickFile?.call();
   }
@@ -555,6 +612,8 @@ class _$PickFileImpl with DiagnosticableTreeMixin implements PickFile {
     TResult Function()? addAnnouncement,
     TResult Function()? pickFile,
     TResult Function(int id)? deleteAnnouncement,
+    TResult Function(AnnouncementModel? announcementModel)? showReplyInput,
+    TResult Function(AnnouncementModel model)? sendReply,
     required TResult orElse(),
   }) {
     if (pickFile != null) {
@@ -571,6 +630,8 @@ class _$PickFileImpl with DiagnosticableTreeMixin implements PickFile {
     required TResult Function(AddAnnouncement value) addAnnouncement,
     required TResult Function(PickFile value) pickFile,
     required TResult Function(DeleteAnnouncement value) deleteAnnouncement,
+    required TResult Function(ShowReplyInput value) showReplyInput,
+    required TResult Function(SendReply value) sendReply,
   }) {
     return pickFile(this);
   }
@@ -583,6 +644,8 @@ class _$PickFileImpl with DiagnosticableTreeMixin implements PickFile {
     TResult? Function(AddAnnouncement value)? addAnnouncement,
     TResult? Function(PickFile value)? pickFile,
     TResult? Function(DeleteAnnouncement value)? deleteAnnouncement,
+    TResult? Function(ShowReplyInput value)? showReplyInput,
+    TResult? Function(SendReply value)? sendReply,
   }) {
     return pickFile?.call(this);
   }
@@ -595,6 +658,8 @@ class _$PickFileImpl with DiagnosticableTreeMixin implements PickFile {
     TResult Function(AddAnnouncement value)? addAnnouncement,
     TResult Function(PickFile value)? pickFile,
     TResult Function(DeleteAnnouncement value)? deleteAnnouncement,
+    TResult Function(ShowReplyInput value)? showReplyInput,
+    TResult Function(SendReply value)? sendReply,
     required TResult orElse(),
   }) {
     if (pickFile != null) {
@@ -689,6 +754,9 @@ class _$DeleteAnnouncementImpl
     required TResult Function() addAnnouncement,
     required TResult Function() pickFile,
     required TResult Function(int id) deleteAnnouncement,
+    required TResult Function(AnnouncementModel? announcementModel)
+        showReplyInput,
+    required TResult Function(AnnouncementModel model) sendReply,
   }) {
     return deleteAnnouncement(id);
   }
@@ -701,6 +769,8 @@ class _$DeleteAnnouncementImpl
     TResult? Function()? addAnnouncement,
     TResult? Function()? pickFile,
     TResult? Function(int id)? deleteAnnouncement,
+    TResult? Function(AnnouncementModel? announcementModel)? showReplyInput,
+    TResult? Function(AnnouncementModel model)? sendReply,
   }) {
     return deleteAnnouncement?.call(id);
   }
@@ -713,6 +783,8 @@ class _$DeleteAnnouncementImpl
     TResult Function()? addAnnouncement,
     TResult Function()? pickFile,
     TResult Function(int id)? deleteAnnouncement,
+    TResult Function(AnnouncementModel? announcementModel)? showReplyInput,
+    TResult Function(AnnouncementModel model)? sendReply,
     required TResult orElse(),
   }) {
     if (deleteAnnouncement != null) {
@@ -729,6 +801,8 @@ class _$DeleteAnnouncementImpl
     required TResult Function(AddAnnouncement value) addAnnouncement,
     required TResult Function(PickFile value) pickFile,
     required TResult Function(DeleteAnnouncement value) deleteAnnouncement,
+    required TResult Function(ShowReplyInput value) showReplyInput,
+    required TResult Function(SendReply value) sendReply,
   }) {
     return deleteAnnouncement(this);
   }
@@ -741,6 +815,8 @@ class _$DeleteAnnouncementImpl
     TResult? Function(AddAnnouncement value)? addAnnouncement,
     TResult? Function(PickFile value)? pickFile,
     TResult? Function(DeleteAnnouncement value)? deleteAnnouncement,
+    TResult? Function(ShowReplyInput value)? showReplyInput,
+    TResult? Function(SendReply value)? sendReply,
   }) {
     return deleteAnnouncement?.call(this);
   }
@@ -753,6 +829,8 @@ class _$DeleteAnnouncementImpl
     TResult Function(AddAnnouncement value)? addAnnouncement,
     TResult Function(PickFile value)? pickFile,
     TResult Function(DeleteAnnouncement value)? deleteAnnouncement,
+    TResult Function(ShowReplyInput value)? showReplyInput,
+    TResult Function(SendReply value)? sendReply,
     required TResult orElse(),
   }) {
     if (deleteAnnouncement != null) {
@@ -773,11 +851,363 @@ abstract class DeleteAnnouncement implements AnnouncementTabEvent {
 }
 
 /// @nodoc
+abstract class _$$ShowReplyInputImplCopyWith<$Res> {
+  factory _$$ShowReplyInputImplCopyWith(_$ShowReplyInputImpl value,
+          $Res Function(_$ShowReplyInputImpl) then) =
+      __$$ShowReplyInputImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({AnnouncementModel? announcementModel});
+}
+
+/// @nodoc
+class __$$ShowReplyInputImplCopyWithImpl<$Res>
+    extends _$AnnouncementTabEventCopyWithImpl<$Res, _$ShowReplyInputImpl>
+    implements _$$ShowReplyInputImplCopyWith<$Res> {
+  __$$ShowReplyInputImplCopyWithImpl(
+      _$ShowReplyInputImpl _value, $Res Function(_$ShowReplyInputImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? announcementModel = freezed,
+  }) {
+    return _then(_$ShowReplyInputImpl(
+      announcementModel: freezed == announcementModel
+          ? _value.announcementModel
+          : announcementModel // ignore: cast_nullable_to_non_nullable
+              as AnnouncementModel?,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$ShowReplyInputImpl
+    with DiagnosticableTreeMixin
+    implements ShowReplyInput {
+  _$ShowReplyInputImpl({required this.announcementModel});
+
+  @override
+  final AnnouncementModel? announcementModel;
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'AnnouncementTabEvent.showReplyInput(announcementModel: $announcementModel)';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+      ..add(DiagnosticsProperty('type', 'AnnouncementTabEvent.showReplyInput'))
+      ..add(DiagnosticsProperty('announcementModel', announcementModel));
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$ShowReplyInputImpl &&
+            (identical(other.announcementModel, announcementModel) ||
+                other.announcementModel == announcementModel));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, announcementModel);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$ShowReplyInputImplCopyWith<_$ShowReplyInputImpl> get copyWith =>
+      __$$ShowReplyInputImplCopyWithImpl<_$ShowReplyInputImpl>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() showInputSection,
+    required TResult Function() getAllAnnouncements,
+    required TResult Function() addAnnouncement,
+    required TResult Function() pickFile,
+    required TResult Function(int id) deleteAnnouncement,
+    required TResult Function(AnnouncementModel? announcementModel)
+        showReplyInput,
+    required TResult Function(AnnouncementModel model) sendReply,
+  }) {
+    return showReplyInput(announcementModel);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? showInputSection,
+    TResult? Function()? getAllAnnouncements,
+    TResult? Function()? addAnnouncement,
+    TResult? Function()? pickFile,
+    TResult? Function(int id)? deleteAnnouncement,
+    TResult? Function(AnnouncementModel? announcementModel)? showReplyInput,
+    TResult? Function(AnnouncementModel model)? sendReply,
+  }) {
+    return showReplyInput?.call(announcementModel);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? showInputSection,
+    TResult Function()? getAllAnnouncements,
+    TResult Function()? addAnnouncement,
+    TResult Function()? pickFile,
+    TResult Function(int id)? deleteAnnouncement,
+    TResult Function(AnnouncementModel? announcementModel)? showReplyInput,
+    TResult Function(AnnouncementModel model)? sendReply,
+    required TResult orElse(),
+  }) {
+    if (showReplyInput != null) {
+      return showReplyInput(announcementModel);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(ShowInputSection value) showInputSection,
+    required TResult Function(GetAllAnnouncements value) getAllAnnouncements,
+    required TResult Function(AddAnnouncement value) addAnnouncement,
+    required TResult Function(PickFile value) pickFile,
+    required TResult Function(DeleteAnnouncement value) deleteAnnouncement,
+    required TResult Function(ShowReplyInput value) showReplyInput,
+    required TResult Function(SendReply value) sendReply,
+  }) {
+    return showReplyInput(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(ShowInputSection value)? showInputSection,
+    TResult? Function(GetAllAnnouncements value)? getAllAnnouncements,
+    TResult? Function(AddAnnouncement value)? addAnnouncement,
+    TResult? Function(PickFile value)? pickFile,
+    TResult? Function(DeleteAnnouncement value)? deleteAnnouncement,
+    TResult? Function(ShowReplyInput value)? showReplyInput,
+    TResult? Function(SendReply value)? sendReply,
+  }) {
+    return showReplyInput?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(ShowInputSection value)? showInputSection,
+    TResult Function(GetAllAnnouncements value)? getAllAnnouncements,
+    TResult Function(AddAnnouncement value)? addAnnouncement,
+    TResult Function(PickFile value)? pickFile,
+    TResult Function(DeleteAnnouncement value)? deleteAnnouncement,
+    TResult Function(ShowReplyInput value)? showReplyInput,
+    TResult Function(SendReply value)? sendReply,
+    required TResult orElse(),
+  }) {
+    if (showReplyInput != null) {
+      return showReplyInput(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class ShowReplyInput implements AnnouncementTabEvent {
+  factory ShowReplyInput(
+          {required final AnnouncementModel? announcementModel}) =
+      _$ShowReplyInputImpl;
+
+  AnnouncementModel? get announcementModel;
+  @JsonKey(ignore: true)
+  _$$ShowReplyInputImplCopyWith<_$ShowReplyInputImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$SendReplyImplCopyWith<$Res> {
+  factory _$$SendReplyImplCopyWith(
+          _$SendReplyImpl value, $Res Function(_$SendReplyImpl) then) =
+      __$$SendReplyImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({AnnouncementModel model});
+}
+
+/// @nodoc
+class __$$SendReplyImplCopyWithImpl<$Res>
+    extends _$AnnouncementTabEventCopyWithImpl<$Res, _$SendReplyImpl>
+    implements _$$SendReplyImplCopyWith<$Res> {
+  __$$SendReplyImplCopyWithImpl(
+      _$SendReplyImpl _value, $Res Function(_$SendReplyImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? model = null,
+  }) {
+    return _then(_$SendReplyImpl(
+      model: null == model
+          ? _value.model
+          : model // ignore: cast_nullable_to_non_nullable
+              as AnnouncementModel,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$SendReplyImpl with DiagnosticableTreeMixin implements SendReply {
+  const _$SendReplyImpl({required this.model});
+
+  @override
+  final AnnouncementModel model;
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'AnnouncementTabEvent.sendReply(model: $model)';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+      ..add(DiagnosticsProperty('type', 'AnnouncementTabEvent.sendReply'))
+      ..add(DiagnosticsProperty('model', model));
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$SendReplyImpl &&
+            (identical(other.model, model) || other.model == model));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, model);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$SendReplyImplCopyWith<_$SendReplyImpl> get copyWith =>
+      __$$SendReplyImplCopyWithImpl<_$SendReplyImpl>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() showInputSection,
+    required TResult Function() getAllAnnouncements,
+    required TResult Function() addAnnouncement,
+    required TResult Function() pickFile,
+    required TResult Function(int id) deleteAnnouncement,
+    required TResult Function(AnnouncementModel? announcementModel)
+        showReplyInput,
+    required TResult Function(AnnouncementModel model) sendReply,
+  }) {
+    return sendReply(model);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? showInputSection,
+    TResult? Function()? getAllAnnouncements,
+    TResult? Function()? addAnnouncement,
+    TResult? Function()? pickFile,
+    TResult? Function(int id)? deleteAnnouncement,
+    TResult? Function(AnnouncementModel? announcementModel)? showReplyInput,
+    TResult? Function(AnnouncementModel model)? sendReply,
+  }) {
+    return sendReply?.call(model);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? showInputSection,
+    TResult Function()? getAllAnnouncements,
+    TResult Function()? addAnnouncement,
+    TResult Function()? pickFile,
+    TResult Function(int id)? deleteAnnouncement,
+    TResult Function(AnnouncementModel? announcementModel)? showReplyInput,
+    TResult Function(AnnouncementModel model)? sendReply,
+    required TResult orElse(),
+  }) {
+    if (sendReply != null) {
+      return sendReply(model);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(ShowInputSection value) showInputSection,
+    required TResult Function(GetAllAnnouncements value) getAllAnnouncements,
+    required TResult Function(AddAnnouncement value) addAnnouncement,
+    required TResult Function(PickFile value) pickFile,
+    required TResult Function(DeleteAnnouncement value) deleteAnnouncement,
+    required TResult Function(ShowReplyInput value) showReplyInput,
+    required TResult Function(SendReply value) sendReply,
+  }) {
+    return sendReply(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(ShowInputSection value)? showInputSection,
+    TResult? Function(GetAllAnnouncements value)? getAllAnnouncements,
+    TResult? Function(AddAnnouncement value)? addAnnouncement,
+    TResult? Function(PickFile value)? pickFile,
+    TResult? Function(DeleteAnnouncement value)? deleteAnnouncement,
+    TResult? Function(ShowReplyInput value)? showReplyInput,
+    TResult? Function(SendReply value)? sendReply,
+  }) {
+    return sendReply?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(ShowInputSection value)? showInputSection,
+    TResult Function(GetAllAnnouncements value)? getAllAnnouncements,
+    TResult Function(AddAnnouncement value)? addAnnouncement,
+    TResult Function(PickFile value)? pickFile,
+    TResult Function(DeleteAnnouncement value)? deleteAnnouncement,
+    TResult Function(ShowReplyInput value)? showReplyInput,
+    TResult Function(SendReply value)? sendReply,
+    required TResult orElse(),
+  }) {
+    if (sendReply != null) {
+      return sendReply(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class SendReply implements AnnouncementTabEvent {
+  const factory SendReply({required final AnnouncementModel model}) =
+      _$SendReplyImpl;
+
+  AnnouncementModel get model;
+  @JsonKey(ignore: true)
+  _$$SendReplyImplCopyWith<_$SendReplyImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
 mixin _$AnnouncementTabState {
   List<AnnouncementModel> get announcementList =>
       throw _privateConstructorUsedError;
   bool get showInitialMessageScreen => throw _privateConstructorUsedError;
   String? get pickedFileName => throw _privateConstructorUsedError;
+  AnnouncementModel? get replayItem => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $AnnouncementTabStateCopyWith<AnnouncementTabState> get copyWith =>
@@ -793,7 +1223,8 @@ abstract class $AnnouncementTabStateCopyWith<$Res> {
   $Res call(
       {List<AnnouncementModel> announcementList,
       bool showInitialMessageScreen,
-      String? pickedFileName});
+      String? pickedFileName,
+      AnnouncementModel? replayItem});
 }
 
 /// @nodoc
@@ -813,6 +1244,7 @@ class _$AnnouncementTabStateCopyWithImpl<$Res,
     Object? announcementList = null,
     Object? showInitialMessageScreen = null,
     Object? pickedFileName = freezed,
+    Object? replayItem = freezed,
   }) {
     return _then(_value.copyWith(
       announcementList: null == announcementList
@@ -827,6 +1259,10 @@ class _$AnnouncementTabStateCopyWithImpl<$Res,
           ? _value.pickedFileName
           : pickedFileName // ignore: cast_nullable_to_non_nullable
               as String?,
+      replayItem: freezed == replayItem
+          ? _value.replayItem
+          : replayItem // ignore: cast_nullable_to_non_nullable
+              as AnnouncementModel?,
     ) as $Val);
   }
 }
@@ -842,7 +1278,8 @@ abstract class _$$InitialImplCopyWith<$Res>
   $Res call(
       {List<AnnouncementModel> announcementList,
       bool showInitialMessageScreen,
-      String? pickedFileName});
+      String? pickedFileName,
+      AnnouncementModel? replayItem});
 }
 
 /// @nodoc
@@ -859,6 +1296,7 @@ class __$$InitialImplCopyWithImpl<$Res>
     Object? announcementList = null,
     Object? showInitialMessageScreen = null,
     Object? pickedFileName = freezed,
+    Object? replayItem = freezed,
   }) {
     return _then(_$InitialImpl(
       announcementList: null == announcementList
@@ -873,6 +1311,10 @@ class __$$InitialImplCopyWithImpl<$Res>
           ? _value.pickedFileName
           : pickedFileName // ignore: cast_nullable_to_non_nullable
               as String?,
+      replayItem: freezed == replayItem
+          ? _value.replayItem
+          : replayItem // ignore: cast_nullable_to_non_nullable
+              as AnnouncementModel?,
     ));
   }
 }
@@ -883,7 +1325,8 @@ class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
   const _$InitialImpl(
       {required final List<AnnouncementModel> announcementList,
       required this.showInitialMessageScreen,
-      required this.pickedFileName})
+      required this.pickedFileName,
+      required this.replayItem})
       : _announcementList = announcementList;
 
   final List<AnnouncementModel> _announcementList;
@@ -899,10 +1342,12 @@ class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
   final bool showInitialMessageScreen;
   @override
   final String? pickedFileName;
+  @override
+  final AnnouncementModel? replayItem;
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'AnnouncementTabState(announcementList: $announcementList, showInitialMessageScreen: $showInitialMessageScreen, pickedFileName: $pickedFileName)';
+    return 'AnnouncementTabState(announcementList: $announcementList, showInitialMessageScreen: $showInitialMessageScreen, pickedFileName: $pickedFileName, replayItem: $replayItem)';
   }
 
   @override
@@ -913,7 +1358,8 @@ class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
       ..add(DiagnosticsProperty('announcementList', announcementList))
       ..add(DiagnosticsProperty(
           'showInitialMessageScreen', showInitialMessageScreen))
-      ..add(DiagnosticsProperty('pickedFileName', pickedFileName));
+      ..add(DiagnosticsProperty('pickedFileName', pickedFileName))
+      ..add(DiagnosticsProperty('replayItem', replayItem));
   }
 
   @override
@@ -927,7 +1373,9 @@ class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
                     other.showInitialMessageScreen, showInitialMessageScreen) ||
                 other.showInitialMessageScreen == showInitialMessageScreen) &&
             (identical(other.pickedFileName, pickedFileName) ||
-                other.pickedFileName == pickedFileName));
+                other.pickedFileName == pickedFileName) &&
+            (identical(other.replayItem, replayItem) ||
+                other.replayItem == replayItem));
   }
 
   @override
@@ -935,7 +1383,8 @@ class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
       runtimeType,
       const DeepCollectionEquality().hash(_announcementList),
       showInitialMessageScreen,
-      pickedFileName);
+      pickedFileName,
+      replayItem);
 
   @JsonKey(ignore: true)
   @override
@@ -948,7 +1397,8 @@ abstract class _Initial implements AnnouncementTabState {
   const factory _Initial(
       {required final List<AnnouncementModel> announcementList,
       required final bool showInitialMessageScreen,
-      required final String? pickedFileName}) = _$InitialImpl;
+      required final String? pickedFileName,
+      required final AnnouncementModel? replayItem}) = _$InitialImpl;
 
   @override
   List<AnnouncementModel> get announcementList;
@@ -956,6 +1406,8 @@ abstract class _Initial implements AnnouncementTabState {
   bool get showInitialMessageScreen;
   @override
   String? get pickedFileName;
+  @override
+  AnnouncementModel? get replayItem;
   @override
   @JsonKey(ignore: true)
   _$$InitialImplCopyWith<_$InitialImpl> get copyWith =>

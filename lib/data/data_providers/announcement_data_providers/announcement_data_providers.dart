@@ -3,7 +3,8 @@ import 'package:kids_buddy/data/models/announcement_model/announcement_model.dar
 
 class AnnouncementDataProvider {
   Future<Box<AnnouncementModel>> getDbObject() async {
-    final announcementDB = await Hive.openBox<AnnouncementModel>('');
+    final announcementDB =
+        await Hive.openBox<AnnouncementModel>('announcements');
     return announcementDB;
   }
 
@@ -25,7 +26,19 @@ class AnnouncementDataProvider {
   Future<void> deleteAnnouncement(int id) async {
     final db = await getDbObject();
     await db.delete(id);
-    db.close();
+    await db.close();
+  }
+
+  Future<void> addReply(AnnouncementModel announcementModel) async {
+    final db = await getDbObject();
+    AnnouncementModel announcementModelNew = AnnouncementModel(
+        message: announcementModel.message,
+        time: announcementModel.time,
+        replays: announcementModel.replays,
+        filePath: announcementModel.filePath,
+        likeCount: announcementModel.likeCount);
+    await db.put(announcementModel.key, announcementModelNew);
+    await db.close();
   }
 
   //Making singleton
