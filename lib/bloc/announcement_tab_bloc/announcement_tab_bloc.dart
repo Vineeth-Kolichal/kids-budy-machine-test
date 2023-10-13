@@ -54,6 +54,7 @@ class AnnouncementTabBloc
           message: announcementController.text,
           time: DateTime.now(),
           filePath: (pickedFile != null) ? pickedFile!.path : null,
+          likeCount: 0,
         ))
             .then((_) {
           announcementController.clear();
@@ -73,7 +74,6 @@ class AnnouncementTabBloc
         type: FileType.custom,
         allowedExtensions: [
           'pdf',
-          'jpg',
         ],
       ).then((value) async {
         if (value != null) {

@@ -19,8 +19,8 @@ class AnnouncementModelAdapter extends TypeAdapter<AnnouncementModel> {
     return AnnouncementModel(
       message: fields[0] as String,
       filePath: fields[1] as String?,
-      likeCount: fields[2] as int?,
-      replays: (fields[3] as List?)?.cast<String>(),
+      likeCount: fields[2] as int,
+      replays: (fields[3] as List).cast<String>(),
       time: fields[4] as DateTime,
     );
   }

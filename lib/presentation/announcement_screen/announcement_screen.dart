@@ -51,16 +51,19 @@ class AnnouncementScreen extends StatelessWidget {
                   height: 50,
                   child: Row(
                     children: [
-                      Container(
-                        height: 35,
-                        padding: const EdgeInsets.symmetric(horizontal: 15),
-                        color: const Color.fromARGB(255, 224, 224, 224),
-                        child: Center(
-                            child: Text('Class',
-                                style: TextStyle(
-                                    fontSize: Responsive.isTablet(context)
-                                        ? 15
-                                        : 9))),
+                      Visibility(
+                        visible: Responsive.isTablet(context),
+                        child: Container(
+                          height: 35,
+                          padding: const EdgeInsets.symmetric(horizontal: 15),
+                          color: const Color.fromARGB(255, 224, 224, 224),
+                          child: Center(
+                              child: Text('Class',
+                                  style: TextStyle(
+                                      fontSize: Responsive.isTablet(context)
+                                          ? 15
+                                          : 9))),
+                        ),
                       ),
                       Container(
                         padding: const EdgeInsets.symmetric(horizontal: 7),
@@ -68,6 +71,9 @@ class AnnouncementScreen extends StatelessWidget {
                         color: const Color.fromARGB(255, 240, 239, 239),
                         child: DropdownButtonHideUnderline(
                           child: DropdownButton(
+                            hint: Responsive.isTablet(context)
+                                ? null
+                                : const Text('Class'),
                             items: [
                               DropdownMenuItem(
                                   child: Text(

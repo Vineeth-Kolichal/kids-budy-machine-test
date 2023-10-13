@@ -3,7 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:kids_buddy/bloc/announcement_tab_bloc/announcement_tab_bloc.dart';
 import 'package:kids_buddy/data/models/announcement_model/announcement_model.dart';
-import 'package:kids_buddy/presentation/announcement_screen/announcement_screen.dart';
 import 'package:kids_buddy/presentation/home_screen/home_screen.dart';
 
 import 'util/export_util.dart';
@@ -22,7 +21,6 @@ class KidsBuddyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
     return MultiBlocProvider(
       providers: [
         BlocProvider(
@@ -30,8 +28,9 @@ class KidsBuddyApp extends StatelessWidget {
         )
       ],
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         theme: theme,
-        home:const  HomeScreen(),
+        home: const HomeScreen(),
       ),
     );
   }

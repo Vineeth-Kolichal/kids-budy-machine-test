@@ -9,13 +9,13 @@ class AnnouncementModel extends HiveObject {
   @HiveField(1)
   final String? filePath;
   @HiveField(2)
-  final int? likeCount;
+  final int likeCount;
   @HiveField(3)
-  final List<String>? replays;
+  final List<String> replays;
   @HiveField(4)
   final DateTime time;
   
 
   AnnouncementModel(
-      {required this.message, this.filePath, this.likeCount, this.replays,required this.time});
+      {required this.message, this.filePath, this.likeCount=0, this.replays=const [],required this.time});
 }
